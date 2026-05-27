@@ -1,0 +1,239 @@
+{
+  "headline": {
+    "rows": 50000,
+    "train_rows": 33107,
+    "valid_rows": 16893,
+    "date_min": 0,
+    "date_max": 602,
+    "split_date": 452,
+    "feature_count": 79,
+    "best_univariate_valid_r2": 0.0022106031520279235,
+    "best_univariate": "feature_06::rank",
+    "best_modulo_valid_r2": 0.0001832617541254189,
+    "best_modulo": 32,
+    "permutation_best_valid_r2_p95": 0.000325451560019685,
+    "permutation_best_valid_r2_max": 0.0003348075896568714,
+    "mp_upper_outlier_count": 18
+  },
+  "args": {
+    "train_parquet_dir": "/home/samoradc/EntropyDynamics/JaneStreet/data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "output_dir": "experiments/hidden_signal_forensics/reports/smoke_real_50k",
+    "sample_stride": 200,
+    "max_rows": 50000,
+    "date_start": null,
+    "date_end": null,
+    "valid_day_fraction": 0.25,
+    "permutations": 3,
+    "seed": 37,
+    "top_k": 40,
+    "periodogram_top_k": 20
+  },
+  "marchenko_pastur": {
+    "bounds": {
+      "n_samples": 50000,
+      "n_features": 79,
+      "aspect_ratio": 0.00158,
+      "lambda_minus": 0.9220815723425929,
+      "lambda_plus": 1.0810784276574072
+    },
+    "eigenvalue_min": 0.0,
+    "eigenvalue_max": 8.396210934626485,
+    "upper_outlier_count": 18,
+    "lower_outlier_count": 59,
+    "upper_outlier_values": [
+      1.1292735820775688,
+      1.1886558926527224,
+      1.3394114472434488,
+      1.3747720897086824,
+      1.5134572457943618,
+      1.5523781064178954,
+      1.7386506404901185,
+      1.8905315155237508,
+      1.9314461070827504,
+      2.118443804111158,
+      2.5324456124808323,
+      2.7102437115125073,
+      3.6228554833495172,
+      3.8258366693003474,
+      4.732715310313523,
+      5.873924075779659,
+      6.861637876325501,
+      8.396210934626485
+    ],
+    "interpretation": "Eigenvalues above lambda_plus indicate correlation structure beyond iid standardized noise. In real financial features this can be ordinary latent factor structure, not proof of synthetic generation."
+  },
+  "spectral": {
+    "rows": 50000,
+    "target_mean": -0.004839917179197073,
+    "target_std": 0.9198060035705566,
+    "target_hill_tail_index_abs": 13.645556586876788,
+    "acf_target": {
+      "1": 0.16245662460920612,
+      "2": -0.0029828802899431925,
+      "5": 0.005466232604016893,
+      "10": -0.02102131908253268,
+      "20": 0.003904002084092803,
+      "50": 0.006517236612453254,
+      "100": 0.004563805227794584
+    },
+    "acf_target_squared": {
+      "1": 0.18226514662873428,
+      "2": 0.10534208422263912,
+      "5": 0.09722942474232855,
+      "10": 0.06459548454460248,
+      "20": 0.023806274610954595,
+      "50": 0.03018729768403465,
+      "100": 0.019859426478996585
+    },
+    "top_periodogram_peaks": [
+      {
+        "frequency_index": 6825,
+        "frequency": 0.1365,
+        "period_rows": 7.326007326007326,
+        "power": 8.981501318941337,
+        "power_share": 0.0004246354412622854
+      },
+      {
+        "frequency_index": 5154,
+        "frequency": 0.10308,
+        "period_rows": 9.701202949165696,
+        "power": 8.51383251697914,
+        "power_share": 0.00040252457794069207
+      },
+      {
+        "frequency_index": 3205,
+        "frequency": 0.0641,
+        "period_rows": 15.600624024960998,
+        "power": 8.509591845994906,
+        "power_share": 0.00040232408371030764
+      },
+      {
+        "frequency_index": 2890,
+        "frequency": 0.0578,
+        "period_rows": 17.301038062283737,
+        "power": 8.206393961354394,
+        "power_share": 0.00038798922331646747
+      },
+      {
+        "frequency_index": 5047,
+        "frequency": 0.10094,
+        "period_rows": 9.906875371507827,
+        "power": 7.962307366229307,
+        "power_share": 0.0003764490792640957
+      },
+      {
+        "frequency_index": 2756,
+        "frequency": 0.05512,
+        "period_rows": 18.1422351233672,
+        "power": 7.7728588811624855,
+        "power_share": 0.0003674921645795579
+      },
+      {
+        "frequency_index": 10814,
+        "frequency": 0.21628,
+        "period_rows": 4.6236360273719255,
+        "power": 7.670609134722166,
+        "power_share": 0.0003626579097421094
+      },
+      {
+        "frequency_index": 10448,
+        "frequency": 0.20896,
+        "period_rows": 4.785604900459418,
+        "power": 7.534842257696055,
+        "power_share": 0.00035623900206871163
+      },
+      {
+        "frequency_index": 2517,
+        "frequency": 0.05034,
+        "period_rows": 19.86491855383393,
+        "power": 7.525832169170349,
+        "power_share": 0.00035581301505595503
+      },
+      {
+        "frequency_index": 2156,
+        "frequency": 0.04312,
+        "period_rows": 23.19109461966605,
+        "power": 7.479255720448651,
+        "power_share": 0.00035361093211313366
+      },
+      {
+        "frequency_index": 6090,
+        "frequency": 0.1218,
+        "period_rows": 8.210180623973727,
+        "power": 7.460130686149519,
+        "power_share": 0.00035270672165984993
+      },
+      {
+        "frequency_index": 17866,
+        "frequency": 0.35732,
+        "period_rows": 2.7986118885033022,
+        "power": 7.336553826303953,
+        "power_share": 0.0003468641445063329
+      },
+      {
+        "frequency_index": 126,
+        "frequency": 0.00252,
+        "period_rows": 396.8253968253968,
+        "power": 6.930172536617108,
+        "power_share": 0.00032765088692956394
+      },
+      {
+        "frequency_index": 6995,
+        "frequency": 0.1399,
+        "period_rows": 7.147962830593281,
+        "power": 6.9133004678900765,
+        "power_share": 0.0003268531941948536
+      },
+      {
+        "frequency_index": 1809,
+        "frequency": 0.03618,
+        "period_rows": 27.63957987838585,
+        "power": 6.778951895677312,
+        "power_share": 0.0003205013424031924
+      },
+      {
+        "frequency_index": 2311,
+        "frequency": 0.04622,
+        "period_rows": 21.635655560363478,
+        "power": 6.685087793140759,
+        "power_share": 0.0003160635515279364
+      },
+      {
+        "frequency_index": 7315,
+        "frequency": 0.1463,
+        "period_rows": 6.83526999316473,
+        "power": 6.586373680911635,
+        "power_share": 0.000311396457562607
+      },
+      {
+        "frequency_index": 6127,
+        "frequency": 0.12254,
+        "period_rows": 8.160600620205647,
+        "power": 6.536110082583486,
+        "power_share": 0.00030902005026748236
+      },
+      {
+        "frequency_index": 7268,
+        "frequency": 0.14536,
+        "period_rows": 6.879471656576775,
+        "power": 6.497159610808957,
+        "power_share": 0.0003071785150739764
+      },
+      {
+        "frequency_index": 1173,
+        "frequency": 0.02346,
+        "period_rows": 42.62574595055413,
+        "power": 6.447094749224462,
+        "power_share": 0.00030481150383212163
+      }
+    ]
+  },
+  "permutation_null": {
+    "p90": 0.0003160955303824986,
+    "p95": 0.000325451560019685,
+    "max": 0.0003348075896568714,
+    "permutations": 3,
+    "interpretation": "Real discovery must exceed the null created by repeating the same search over permuted targets."
+  },
+  "methodological_caveat": "This is an exploratory screen on a sampled subset. It can falsify easy hidden-pattern hypotheses, but it cannot promote an alpha without a frozen out-of-sample validation."
+}
