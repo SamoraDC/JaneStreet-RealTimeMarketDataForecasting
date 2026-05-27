@@ -1,0 +1,65 @@
+{
+  "available_alpha_columns": [
+    "latent_alpha_linear_stack",
+    "ridge_rank_alpha10000",
+    "pls_rank_k8"
+  ],
+  "available_residual_feature_columns": [
+    "latent_alpha_linear_stack",
+    "ridge_rank_alpha10000",
+    "pls_rank_k8"
+  ],
+  "available_risk_columns": [],
+  "config": {
+    "alpha_columns": [
+      "latent_alpha_linear_stack",
+      "ridge_rank_alpha10000",
+      "pls_rank_k8"
+    ],
+    "experiment_name": "strong_bridge_primary_preprocess_raw9_stride50_v1",
+    "family_prediction_path": "multi-models/reports/primary_preprocess_raw9_stride50_preds_v1/validation_predictions.parquet",
+    "gateway_risk_profiles": [
+      "abs_pred"
+    ],
+    "gateway_risk_strengths": [
+      100.0
+    ],
+    "min_regime_rows": 500,
+    "output_dir": "multi-models/reports/strong_bridge_primary_preprocess_raw9_stride50_v1",
+    "regime_prior_strength": 1000.0,
+    "residual_alpha": 10000.0,
+    "residual_feature_columns": [
+      "latent_alpha_linear_stack",
+      "ridge_rank_alpha10000",
+      "pls_rank_k8"
+    ],
+    "residual_gate_min_delta": 0.0,
+    "residual_gate_min_rows": 100,
+    "residual_gate_prior_strength": 1000.0,
+    "residual_gate_symbol_mod": 8,
+    "residual_gate_time_bucket_size": 100,
+    "residual_tail_quantiles": [
+      0.9,
+      0.95
+    ],
+    "risk_columns": [],
+    "risk_strengths": [
+      0.02
+    ],
+    "stack_alpha": 1000.0,
+    "strong_base": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "symbol_mod": 8,
+    "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+    "time_bucket_size": 100,
+    "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions",
+    "write_predictions": false
+  },
+  "experiment_name": "strong_bridge_primary_preprocess_raw9_stride50_v1",
+  "fold_causality_check": "passed: stack, residual, risk normalization and regime scales fit only earlier folds; gateway updates use prior-date simulator",
+  "gateway_bad_updates": 0,
+  "n_folds": 5,
+  "rows": 220570,
+  "selection_check": "passed: strengths/features are fixed by config and all candidates are reported",
+  "strong_base": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+  "target_leakage_check": "passed"
+}
