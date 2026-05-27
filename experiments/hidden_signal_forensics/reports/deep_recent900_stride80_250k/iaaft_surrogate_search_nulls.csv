@@ -1,0 +1,5 @@
+run,iterations,best_feature,best_transform,best_valid_r2
+2,20,feature_02,top05_indicator,0.00028714147771990994
+1,20,feature_24,square_z,0.00020137646415874233
+3,20,feature_61,rank,0.00013455027140163445
+0,20,feature_66,positive_indicator,0.00008986533603683178
