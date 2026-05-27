@@ -1,0 +1,39 @@
+# Multi-Model Experiment: family_artifacts_5fold_lags_stride50_v1
+
+## Headline
+
+- Best candidate: `ridge_rank_alpha10000__risk_high_error_shrink_s0p2`.
+- Family: `risk_shrinkage`.
+- Global weighted zero-mean R2: `0.003867448`.
+- Mean fold R2: `0.003713911`.
+- Min fold R2: `0.000864106`.
+
+## Audit
+
+- Folds: `5`.
+- Model features: `100`.
+- Uses processed lags: `True`.
+- Uses context features: `True`.
+- Target leakage check: `passed`.
+- Fold causality check: `passed`.
+- Selection check: `passed: risk strengths and auxiliary bases are fixed by config, not selected inside validation`.
+- Residual rules: `feature_47, feature_59, feature_04`.
+- Risk auxiliary targets: `abs_responder6, sq_responder6, abs_error, sq_error, high_error`.
+
+## Artifact Manifest
+
+- `ridge_rank_alpha10000`: alpha_latent_global - Ridge on train-fitted rank encodings.
+- `pls_rank_k8`: alpha_latent_recent - PLS rank compression.
+- `gateway_risk_conservative_rls_abs_pred_s100_prediction`: alpha_strong_existing - best confirmed strong OOF candidate from gateway RLS adapter.
+- `ridge_rank_alpha10000__feature_47_z_residual`: residual_correction - global residual bridge.
+- `pls_rank_k8__feature_59_z_residual`: residual_correction - recent residual bridge.
+- `ridge_rank_alpha10000__risk_abs_responder6_ridge_rank_score`: risk_volatility_uncertainty - absolute responder risk target.
+- `ridge_rank_alpha10000__risk_sq_responder6_ridge_rank_score`: risk_volatility_uncertainty - squared responder risk target.
+- `ridge_rank_alpha10000__risk_abs_error_ridge_rank_score`: risk_volatility_uncertainty - absolute model error target.
+- `ridge_rank_alpha10000__risk_abs_error_s0p05_micro_regime_scaled`: regime_microstructure - observable microstructure scale gate.
+
+## Methodological Status
+
+- This is an experimental OOF validation stack, not yet a Kaggle runtime artifact.
+- Risk and regime models are auxiliary: they modulate the alpha prediction; they do not change the required final output schema.
+- Promotion requires comparison against the preserved conservative and historical checkpoints under the same fold protocol.
