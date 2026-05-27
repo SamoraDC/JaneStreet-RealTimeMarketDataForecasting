@@ -1,0 +1,42 @@
+{
+  "base_strategy": "base_ensemble",
+  "best_variant": {
+    "folds": 5,
+    "global_r2": 0.00011012467858428909,
+    "max_delta_r2": 0.0025175005618649493,
+    "max_r2": 0.008695502474734385,
+    "mean_r2": 0.0011024977056359742,
+    "min_delta_r2": -0.00014788995116599146,
+    "min_r2": -0.017150151213420894,
+    "numerator_improvement": 2490.7140197925037,
+    "std_r2": 0.010604919883447765,
+    "tail_buckets": "q90_q99",
+    "validation_rows": 3730672,
+    "variant": "q90_q99_only"
+  },
+  "candidate_strategy": "batch_missing_clock_simplex",
+  "experiment": "online_tail_variant_analysis",
+  "input": "experiments/time_geometry/reports/online_tail_control_q99_confirm_max1338/online_tail_control_weight_bucket_by_fold.csv",
+  "leakage_note": "Uses only already-scored validation bucket aggregates; no refit or target-derived feature is created.",
+  "variants": [
+    {
+      "name": "q99_only",
+      "tail_buckets": [
+        "q99_q100"
+      ]
+    },
+    {
+      "name": "q90_q99_only",
+      "tail_buckets": [
+        "q90_q99"
+      ]
+    },
+    {
+      "name": "q90_q100",
+      "tail_buckets": [
+        "q90_q99",
+        "q99_q100"
+      ]
+    }
+  ]
+}
