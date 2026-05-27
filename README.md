@@ -16,11 +16,13 @@ The most important results are preserved under `best-candidates/`. Each
 candidate directory contains its own `README.md`, `ARTIFACTS.md`, `CODE.md`,
 generated outputs, and a code snapshot.
 
-| Directory | Role | Preserved reference | Score |
-| --- | --- | --- | --- |
-| `best-candidates/batch_mean_std_fixed_blend/` | Best local Stage 3 reference | `strong_oof_subset_s23aux8_s17_gateway_batch_mean_std_stage3_narrow_v1/fixed_blend_0_w0p75_fixed_blend` | Stage 3 `global_r2=0.014424968604` |
-| `best-candidates/historical_residual_tail/` | Best full historical reference | `strong_oof_hist_max1398_gateway_residual_tail_modes_v1/gateway_risk_conservative_rls_abs_pred_s100_prediction_residual_weight_and_abs_q0p95_residual_tail` | Historical `global_r2=0.015630171202` |
-| `best-candidates/conservative_dynamic_gateway_rls/` | Lowest operational-risk preserved reference | `dynamic_gateway_rls_experts_alpha10000_f0p995` | Stage 3 `global_r2=0.013836465`; historical `global_r2=0.015425344` |
+
+| Directory                                           | Role                                        | Preserved reference                                                                                                                                         | Score                                                               |
+| --------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `best-candidates/batch_mean_std_fixed_blend/`       | Best local Stage 3 reference                | `strong_oof_subset_s23aux8_s17_gateway_batch_mean_std_stage3_narrow_v1/fixed_blend_0_w0p75_fixed_blend`                                                     | Stage 3 `global_r2=0.014424968604`                                  |
+| `best-candidates/historical_residual_tail/`         | Best full historical reference              | `strong_oof_hist_max1398_gateway_residual_tail_modes_v1/gateway_risk_conservative_rls_abs_pred_s100_prediction_residual_weight_and_abs_q0p95_residual_tail` | Historical `global_r2=0.015630171202`                               |
+| `best-candidates/conservative_dynamic_gateway_rls/` | Lowest operational-risk preserved reference | `dynamic_gateway_rls_experts_alpha10000_f0p995`                                                                                                             | Stage 3 `global_r2=0.013836465`; historical `global_r2=0.015425344` |
+
 
 Read `best-candidates/README.md` first if your goal is to reproduce or audit
 the preserved results.
@@ -43,13 +45,13 @@ The downloaded file was named
 Kaggle references:
 
 - Competition page:
-  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting>
+  [https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting)
 - Leaderboard:
-  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard>
+  [https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard)
 - Data page:
-  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data>
+  [https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data)
 - Rules:
-  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/rules>
+  [https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/rules](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/rules)
 
 Important interpretation boundary: the preserved project rows are offline OOF,
 historical, or Stage 3 validation results, not official Kaggle submissions.
@@ -58,19 +60,25 @@ competition rank to these candidates.
 
 How to read the validation labels:
 
-| Label | Plain meaning | What it proves | What it does not prove |
-| --- | --- | --- | --- |
-| `Stage 3` | The strict local recency test. It focuses on later temporal folds, closer to the end of the available training period. | The method still works in the recent local regime used for final model selection. | It does not prove the exact Kaggle public/private leaderboard score. |
-| `Historical` | A wider temporal confirmation test over an earlier historical cutoff. | The method is not only tuned to one recent local window and can survive a broader regime check. | It is not more official than Stage 3 and is not a Kaggle submission. |
-| `Kaggle runtime` | The code is shaped to run inside the competition-style `predict(test, lags)` gateway. | The package is operationally closer to a real submission path. | It does not prove leaderboard rank unless Kaggle accepts and scores the submission. |
-| `Official leaderboard` | A score returned by Kaggle after an actual submitted notebook/model. | The competition platform accepted and scored the submission. | It does not explain whether the method is robust locally unless audited separately. |
+
+| Label                  | Plain meaning                                                                                                          | What it proves                                                                                  | What it does not prove                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `Stage 3`              | The strict local recency test. It focuses on later temporal folds, closer to the end of the available training period. | The method still works in the recent local regime used for final model selection.               | It does not prove the exact Kaggle public/private leaderboard score.                |
+| `Historical`           | A wider temporal confirmation test over an earlier historical cutoff.                                                  | The method is not only tuned to one recent local window and can survive a broader regime check. | It is not more official than Stage 3 and is not a Kaggle submission.                |
+| `Kaggle runtime`       | The code is shaped to run inside the competition-style `predict(test, lags)` gateway.                                  | The package is operationally closer to a real submission path.                                  | It does not prove leaderboard rank unless Kaggle accepts and scores the submission. |
+| `Official leaderboard` | A score returned by Kaggle after an actual submitted notebook/model.                                                   | The competition platform accepted and scored the submission.                                    | It does not explain whether the method is robust locally unless audited separately. |
+
 
 In short: `Stage 3` answers "does this still work on the recent local regime?";
 `Historical` answers "does this also survive a broader temporal check?";
 `Kaggle runtime` answers "can this be packaged like a real submission?"; and
 `Official leaderboard` answers "what did Kaggle actually score?".
 
+**Kaggle public leaderboard vs preserved local candidates**
+
 ![Kaggle public leaderboard vs preserved local candidates](charts/figures/leaderboard_candidate_score_comparison.png)
+
+[Open the full-size chart](charts/figures/leaderboard_candidate_score_comparison.png)
 
 Chart data is preserved in
 `charts/leaderboard_candidate_score_comparison.csv` and can be regenerated with:
@@ -81,28 +89,32 @@ uv run python charts/generate_leaderboard_candidate_comparison.py
 
 ### Top Public Leaderboard Scores
 
-| Public rank | Team name | Public score |
-| --- | --- | --- |
-| 1 | `ms capital` | `0.013890` |
-| 2 | `Patrick Yam` | `0.013273` |
-| 3 | `shorturl.at/LKhAD` | `0.013163` |
-| 4 | `Haoze Hou` | `0.011683` |
-| 5 | `hyd` | `0.011449` |
-| 6 | `Thomas Dueholm Hansen` | `0.010675` |
-| 7 | `leo` | `0.010480` |
-| 8 | `Evgeniia Grigoreva` | `0.010434` |
-| 9 | `HAO LI` | `0.010417` |
-| 10 | `ponythewhite` | `0.010293` |
+
+| Public rank | Team name               | Public score |
+| ----------- | ----------------------- | ------------ |
+| 1           | `ms capital`            | `0.013890`   |
+| 2           | `Patrick Yam`           | `0.013273`   |
+| 3           | `shorturl.at/LKhAD`     | `0.013163`   |
+| 4           | `Haoze Hou`             | `0.011683`   |
+| 5           | `hyd`                   | `0.011449`   |
+| 6           | `Thomas Dueholm Hansen` | `0.010675`   |
+| 7           | `leo`                   | `0.010480`   |
+| 8           | `Evgeniia Grigoreva`    | `0.010434`   |
+| 9           | `HAO LI`                | `0.010417`   |
+| 10          | `ponythewhite`          | `0.010293`   |
+
 
 ### Preserved Local Scores Versus Public Rank 1
 
-| Candidate | Validation regime | Local score used for comparison | Delta vs public #1 `ms capital` |
-| --- | --- | --- | --- |
-| `historical_residual_tail` | Historical OOF, `max_date_id=1398` | `0.015630171202` | `+0.001740171202` |
-| `conservative_dynamic_gateway_rls` | Historical gateway/RLS validation | `0.015425344` | `+0.001535344` |
-| `batch_mean_std_fixed_blend` | Stage 3 OOF validation | `0.014424968604` | `+0.000534968604` |
-| `historical_residual_tail` | Stage 3 OOF validation, same residual-tail mode | `0.013851999952` | `-0.000038000048` |
-| `conservative_dynamic_gateway_rls` | Stage 3 operational validation | `0.013836465051` | `-0.000053534949` |
+
+| Candidate                          | Validation regime                               | Local score used for comparison | Delta vs public #1 `ms capital` |
+| ---------------------------------- | ----------------------------------------------- | ------------------------------- | ------------------------------- |
+| `historical_residual_tail`         | Historical OOF, `max_date_id=1398`              | `0.015630171202`                | `+0.001740171202`               |
+| `conservative_dynamic_gateway_rls` | Historical gateway/RLS validation               | `0.015425344`                   | `+0.001535344`                  |
+| `batch_mean_std_fixed_blend`       | Stage 3 OOF validation                          | `0.014424968604`                | `+0.000534968604`               |
+| `historical_residual_tail`         | Stage 3 OOF validation, same residual-tail mode | `0.013851999952`                | `-0.000038000048`               |
+| `conservative_dynamic_gateway_rls` | Stage 3 operational validation                  | `0.013836465051`                | `-0.000053534949`               |
+
 
 Some candidates appear more than once because this repository preserves both
 Stage 3 and historical validation views. The conservative dynamic RLS Stage 3
@@ -110,6 +122,14 @@ line is the closest local reference to the Kaggle-style runtime package because
 that candidate has exported model artifacts, a submission entrypoint, and a
 causal gateway update path. The two stronger OOF references still require more
 export work before they are equally close to the online Kaggle contract.
+
+### Why This Is A Local Score, Not An Official Kaggle Score
+
+These rows are local validation scores because Kaggle was no longer accepting
+submissions when the package was ready. The runtime produced
+`submission.parquet`, but the final scoring request was rejected by Kaggle
+because submissions had been disabled. The detailed platform error is recorded
+again in the `Kaggle Runtime Status` section below.
 
 ## Reproducibility Boundary
 
@@ -123,7 +143,7 @@ Required local inputs for full reproduction:
 - saved OOF prediction artifacts referenced by the candidate `CODE.md` files;
 - the Python environment installed with `uv`;
 - enough CPU/GPU/RAM to rebuild primary model predictions if the saved OOF
-  artifacts are missing.
+artifacts are missing.
 
 What can be audited without private/local data:
 
@@ -200,23 +220,25 @@ path/                  Research doctrine and planning files.
 
 Important modules in `src/janestreet/`:
 
-| Module | Purpose |
-| --- | --- |
-| `metrics.py` | Weighted zero-mean R2 implementation. |
-| `folds.py` | Deterministic temporal fold generation. |
-| `paths.py` | Canonical project paths. |
-| `linear.py` | Weighted Ridge and linear utilities. |
-| `calibration.py` | Causal clipping, scaling, and calibration helpers. |
-| `blending.py` | Prediction blending and simplex-style combination utilities. |
-| `bayesian_meta.py` | Gateway-style online/meta-learning logic. |
-| `official_lags.py` | Official lag construction and causal lag handling. |
-| `submission_artifacts.py` | Export/load helpers for submission artifacts. |
-| `submission_inference.py` | Runtime inference helpers. |
-| `submission_models.py` | Submission model wrappers. |
-| `tail_control.py` | Tail-switch and high-weight control utilities. |
-| `diagnostics.py` | Slice and fold diagnostics. |
-| `cross_sectional.py`, `temporal_geometry.py`, `time_geometry.py` | Feature families tested during research. |
-| `symbol_graph.py`, `reservoir_features.py`, `multiscale_features.py`, `koopman_features.py` | Experimental feature families. |
+
+| Module                                                                                      | Purpose                                                      |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `metrics.py`                                                                                | Weighted zero-mean R2 implementation.                        |
+| `folds.py`                                                                                  | Deterministic temporal fold generation.                      |
+| `paths.py`                                                                                  | Canonical project paths.                                     |
+| `linear.py`                                                                                 | Weighted Ridge and linear utilities.                         |
+| `calibration.py`                                                                            | Causal clipping, scaling, and calibration helpers.           |
+| `blending.py`                                                                               | Prediction blending and simplex-style combination utilities. |
+| `bayesian_meta.py`                                                                          | Gateway-style online/meta-learning logic.                    |
+| `official_lags.py`                                                                          | Official lag construction and causal lag handling.           |
+| `submission_artifacts.py`                                                                   | Export/load helpers for submission artifacts.                |
+| `submission_inference.py`                                                                   | Runtime inference helpers.                                   |
+| `submission_models.py`                                                                      | Submission model wrappers.                                   |
+| `tail_control.py`                                                                           | Tail-switch and high-weight control utilities.               |
+| `diagnostics.py`                                                                            | Slice and fold diagnostics.                                  |
+| `cross_sectional.py`, `temporal_geometry.py`, `time_geometry.py`                            | Feature families tested during research.                     |
+| `symbol_graph.py`, `reservoir_features.py`, `multiscale_features.py`, `koopman_features.py` | Experimental feature families.                               |
+
 
 ## Methodology
 
@@ -280,7 +302,7 @@ The project separates evidence into tiers:
 - full Stage 3 validation: current local promotion protocol;
 - historical `max_date_id=1398` validation: additional regime confirmation;
 - Kaggle runtime package: operational packaging, not a guarantee of official
-  submission acceptance.
+submission acceptance.
 
 ## Research Path Summary
 
@@ -424,12 +446,14 @@ The runtime package reached the point where it could generate a valid
 
 The difference is important:
 
-| Step | Status | Meaning |
-| --- | --- | --- |
-| Build local package | Passed | The code and artifacts could be assembled into a submission-style package. |
-| Generate `submission.parquet` locally | Passed | The local workflow produced the expected output file. |
-| Run the Kaggle notebook workflow | Passed | The notebook version also produced `submission.parquet`. |
-| Submit to the competition leaderboard | Blocked by Kaggle | Kaggle rejected final scoring because submissions were disabled. |
+
+| Step                                  | Status            | Meaning                                                                    |
+| ------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
+| Build local package                   | Passed            | The code and artifacts could be assembled into a submission-style package. |
+| Generate `submission.parquet` locally | Passed            | The local workflow produced the expected output file.                      |
+| Run the Kaggle notebook workflow      | Passed            | The notebook version also produced `submission.parquet`.                   |
+| Submit to the competition leaderboard | Blocked by Kaggle | Kaggle rejected final scoring because submissions were disabled.           |
+
 
 The observed platform error was:
 
@@ -508,10 +532,10 @@ which artifacts are intentionally preserved and which should stay local.
 
 - Run experiment commands from the repository root.
 - Do not compare candidates across different validation regimes without saying
-  so explicitly.
+so explicitly.
 - Do not treat smoke or probe results as promoted evidence.
 - Do not move raw Kaggle data, `.env`, credentials, or local-only caches into
-  Git.
+Git.
 - Use `best-candidates/` for public, preserved references.
 - Use `docs/` for methodology, audits, and negative evidence.
 - Use `reports/` and `multi-models/reports/` for generated experiment outputs.
