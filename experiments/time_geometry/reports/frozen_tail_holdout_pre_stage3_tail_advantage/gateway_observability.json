@@ -1,0 +1,7 @@
+{
+  "batch_rows_max": 39,
+  "batch_rows_min": 27,
+  "batches": 58080,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0
+}
