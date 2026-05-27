@@ -1,0 +1,10 @@
+model,family,valid_r2
+ridge_rank_alpha10000,ridge_rank,0.001633463481775732
+ridge_rank_alpha1000,ridge_rank,0.00128823772106057
+ridge_rank_alpha100,ridge_rank,0.0005680930448364041
+ridge_rank_alpha10,ridge_rank,0.00034515022995840194
+pls_rank_k4,pls_rank_unweighted_fit,0.0003436006936606839
+ridge_rank_alpha1,ridge_rank,0.0003146541479147613
+pls_rank_k8,pls_rank_unweighted_fit,0.0001203918261901693
+pls_rank_k2,pls_rank_unweighted_fit,-0.00004146520163028633
+pls_rank_k1,pls_rank_unweighted_fit,-0.00019326599523061816
