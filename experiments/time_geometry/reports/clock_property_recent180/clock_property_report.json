@@ -1,0 +1,113 @@
+{
+  "scope": {
+    "start_date_id": 1519,
+    "max_date_id": 1698,
+    "recent_days_requested": 180,
+    "bucket_count": 20,
+    "feature_columns_used": [
+      "feature_00",
+      "feature_01",
+      "feature_02",
+      "feature_03",
+      "feature_04",
+      "feature_05",
+      "feature_06",
+      "feature_07",
+      "feature_08",
+      "feature_09",
+      "feature_10",
+      "feature_11",
+      "feature_12",
+      "feature_13",
+      "feature_14",
+      "feature_15",
+      "feature_16",
+      "feature_17",
+      "feature_18",
+      "feature_19",
+      "feature_20",
+      "feature_21",
+      "feature_22",
+      "feature_23",
+      "feature_24",
+      "feature_25",
+      "feature_26",
+      "feature_27",
+      "feature_28",
+      "feature_29",
+      "feature_30",
+      "feature_31"
+    ]
+  },
+  "summary": [
+    {
+      "clock": "batch_activity_rank_bucket",
+      "buckets": 20,
+      "row_cv": 5.50651130219846e-05,
+      "energy_cv": 0.17792412946374805,
+      "energy_share_max": 0.07179639741957612,
+      "target_abs_mean_spread": 0.2575458586215973,
+      "date_bucket_energy_cv_mean": 1.1915418684482575
+    },
+    {
+      "clock": "symbol_activity_ewm_rank_bucket",
+      "buckets": 20,
+      "row_cv": 2.238186763205399e-06,
+      "energy_cv": 0.19861070222725583,
+      "energy_share_max": 0.06878418916274763,
+      "target_abs_mean_spread": 0.2016131579875946,
+      "date_bucket_energy_cv_mean": 0.9864113420248032
+    },
+    {
+      "clock": "row_activity_rank_bucket",
+      "buckets": 20,
+      "row_cv": 1.525067209652955e-06,
+      "energy_cv": 0.199514644604824,
+      "energy_share_max": 0.06882333394678168,
+      "target_abs_mean_spread": 0.2030114233493805,
+      "date_bucket_energy_cv_mean": 0.9677013665437698
+    },
+    {
+      "clock": "batch_weight_rank_bucket",
+      "buckets": 20,
+      "row_cv": 0.02333102445617346,
+      "energy_cv": 0.3670693249641143,
+      "energy_share_max": 0.09414353811405987,
+      "target_abs_mean_spread": 0.20338988304138184,
+      "date_bucket_energy_cv_mean": 0.29022100642323495
+    },
+    {
+      "clock": "symbol_weight_cum_rank_bucket",
+      "buckets": 20,
+      "row_cv": 1.525067209652955e-06,
+      "energy_cv": 0.4733435515613481,
+      "energy_share_max": 0.1295432673074119,
+      "target_abs_mean_spread": 0.5441524684429169,
+      "date_bucket_energy_cv_mean": 0.9379716858267784
+    },
+    {
+      "clock": "clock_time_bucket",
+      "buckets": 20,
+      "row_cv": 0.03602395821107995,
+      "energy_cv": 0.548222128043937,
+      "energy_share_max": 0.15040046666286913,
+      "target_abs_mean_spread": 0.6207515597343445,
+      "date_bucket_energy_cv_mean": 1.1061387270689012
+    },
+    {
+      "clock": "batch_missing_rank_bucket",
+      "buckets": 4,
+      "row_cv": 0.7648068442278642,
+      "energy_cv": 0.7458885576132956,
+      "energy_share_max": 0.5583233520204793,
+      "target_abs_mean_spread": 0.35571038722991943,
+      "date_bucket_energy_cv_mean": 0.6783328279852867
+    }
+  ],
+  "interpretation": [
+    "Lower row_cv means the clock distributes rows more evenly across buckets.",
+    "Lower energy_cv means weighted responder_6 energy is more evenly distributed across clock buckets.",
+    "Lower date_bucket_energy_cv_mean means each bucket is more stable across dates.",
+    "Target-energy metrics are diagnostics only; target-derived clocks are not valid online features."
+  ]
+}
