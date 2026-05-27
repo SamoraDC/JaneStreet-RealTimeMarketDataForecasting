@@ -1,0 +1,19 @@
+{
+  "candidate_rows": 3540,
+  "config": {
+    "categories": [
+      "historical"
+    ],
+    "exclude_reports": [],
+    "include_reports": [],
+    "min_rows": 10000000,
+    "output_dir": "multi-models/reports/report_scoreboard_historical_full_2026_05_26",
+    "reports_root": "multi-models/reports",
+    "top_k": 20
+  },
+  "filtered_rows": 332,
+  "leakage_note": "This aggregates already-computed fold summaries only; it does not fit, select, or deploy a row-level model.",
+  "reports_scanned": 68,
+  "skipped": [],
+  "status": "diagnostic_only"
+}
