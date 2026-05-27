@@ -1,0 +1,68 @@
+{
+  "base_candidates": [
+    "conservative_rls_prediction",
+    "aggressive_rls_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s25_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s25_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s100_prediction"
+  ],
+  "config": {
+    "experiment_name": "strong_oof_hist_max1398_gateway_abs_pred_shrink",
+    "gateway_risk_profiles": [
+      "abs_pred"
+    ],
+    "gateway_risk_strengths": [
+      25.0,
+      100.0
+    ],
+    "include_gateway_risk_shrink": true,
+    "include_gateway_rls": true,
+    "max_rows_per_fold": null,
+    "min_group_rows": [
+      20000
+    ],
+    "output_dir": "multi-models/reports/strong_oof_hist_max1398_gateway_abs_pred_shrink",
+    "raw_feature_columns": [],
+    "raw_train_parquet_dir": null,
+    "regime_base_candidates": [],
+    "residual_features": [],
+    "risk_base_candidates": [],
+    "risk_shrink_strengths": [
+      0.0
+    ],
+    "sample_stride": 1,
+    "scale_prior_strengths": [
+      1000.0
+    ],
+    "strong_base_candidates": [
+      "conservative_rls_prediction",
+      "aggressive_rls_prediction"
+    ],
+    "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_hist_max1398_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+    "time_bucket_sizes": [
+      100
+    ],
+    "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_hist_max1398_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions",
+    "write_predictions": false
+  },
+  "experiment_name": "strong_oof_hist_max1398_gateway_abs_pred_shrink",
+  "fold_causality_check": "passed: walk-forward layers fit only earlier folds; gateway updates use prior-date lag simulation",
+  "folds": 5,
+  "gateway_bad_updates": 0,
+  "known_reference_points": {
+    "conservative_stage3_local": 0.013836465,
+    "historical_max1398": 0.015425344
+  },
+  "n_base_candidates": 6,
+  "n_folds": 5,
+  "n_model_features": 6,
+  "residual_features": [],
+  "rows": 11151360,
+  "selection_check": "passed: all grids are reported as fixed candidates, no validation-best candidate is promoted inside code",
+  "target_leakage_check": "passed",
+  "uses_context_features": true,
+  "uses_gateway_risk_shrink": true,
+  "uses_gateway_rls": true,
+  "uses_processed_lags": false
+}
