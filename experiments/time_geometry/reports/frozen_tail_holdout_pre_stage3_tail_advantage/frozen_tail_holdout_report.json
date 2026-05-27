@@ -1,0 +1,68 @@
+{
+  "best_strategy": {
+    "denominator": 4151853.1429863097,
+    "fold": "pre_stage3_holdout",
+    "numerator": 4122700.5852323305,
+    "prediction_mean": 0.0026011885461271903,
+    "prediction_std": 0.051492358547038965,
+    "rows": 2178000,
+    "strategy": "batch_missing_clock_simplex",
+    "train_end": 1338,
+    "train_start": 1219,
+    "valid_end": 1398,
+    "valid_start": 1339,
+    "weighted_zero_mean_r2": 0.007021577293316983
+  },
+  "engines": [
+    "xgboost",
+    "lightgbm"
+  ],
+  "experiment": "frozen_tail_holdout",
+  "fold": {
+    "fold": "pre_stage3_holdout",
+    "train_end": 1338,
+    "train_start": 1219,
+    "valid_end": 1398,
+    "valid_start": 1339
+  },
+  "frozen_policy": {
+    "candidate_strategy": "clock_simplex",
+    "clock": "batch_missing",
+    "tail_buckets": [
+      "q90_q99",
+      "q99_q100"
+    ]
+  },
+  "gbdt_seeds": "17,23,37",
+  "max_iter": 80,
+  "observability": {
+    "batch_rows_max": 39,
+    "batch_rows_min": 27,
+    "batches": 58080,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0
+  },
+  "tail_advantage_equivalence": {
+    "differing_rows": 0,
+    "fixed_and_advantage_identical": true,
+    "max_abs_diff": 0.0,
+    "rows": 2178000,
+    "tail_rows": 215864,
+    "validation_tail_groups": 2,
+    "validation_tail_groups_using_base": 0,
+    "validation_tail_groups_using_candidate": 2,
+    "validation_tail_groups_using_fallback": 0
+  },
+  "tail_advantage_policy": {
+    "all_parameter_rows_use_candidate": true,
+    "calibration_tail_rows": 223632,
+    "fallback_use_candidate": true,
+    "group_columns": [
+      "clock_bucket"
+    ],
+    "parameter_rows": 4,
+    "use_base_parameter_rows": 0,
+    "use_candidate_parameter_rows": 4
+  },
+  "train_sample_frac": 0.1
+}
