@@ -1,0 +1,5 @@
+fold,train_start,train_end,selection_start,selection_end,valid_start,valid_end,phase,batches,batch_rows_min,batch_rows_max,max_abs_diff,mean_abs_diff
+otf_01,1249,1308,1309,1318,1319,1328,selection,9680,39,39,0.0,0.0
+otf_01,1249,1308,1309,1318,1319,1328,validation,9680,37,39,0.0,0.0
+otf_02,1259,1318,1319,1328,1329,1338,selection,9680,37,39,0.0,0.0
+otf_02,1259,1318,1319,1328,1329,1338,validation,9680,37,39,0.0,0.0
