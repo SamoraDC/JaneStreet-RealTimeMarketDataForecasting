@@ -417,6 +417,31 @@ The package produced `submission.parquet` locally and in the Kaggle notebook
 workflow. Official competition submission was blocked because submissions were
 disabled for the competition at the time this package was prepared.
 
+### Why There Is No Official Kaggle Score For This Package
+
+The runtime package reached the point where it could generate a valid
+`submission.parquet`, but it was not officially scored by Kaggle.
+
+The difference is important:
+
+| Step | Status | Meaning |
+| --- | --- | --- |
+| Build local package | Passed | The code and artifacts could be assembled into a submission-style package. |
+| Generate `submission.parquet` locally | Passed | The local workflow produced the expected output file. |
+| Run the Kaggle notebook workflow | Passed | The notebook version also produced `submission.parquet`. |
+| Submit to the competition leaderboard | Blocked by Kaggle | Kaggle rejected final scoring because submissions were disabled. |
+
+The observed platform error was:
+
+```text
+400 FAILED_PRECONDITION: Submission not allowed:
+Submissions have been disabled for this competition.
+```
+
+Because of that platform-level block, the repository reports local Stage 3,
+historical, and runtime-readiness evidence, but it does not claim an official
+public or private leaderboard score for the preserved package.
+
 The two strong OOF references are not directly submissible yet. They would need
 their stack coefficients, thresholds, batch features, residual-tail rules, and
 fixed blend logic exported into the online `predict(test, lags)` runtime.
