@@ -1,0 +1,19 @@
+{
+  "candidate_rows": 4157,
+  "config": {
+    "categories": [
+      "stage3"
+    ],
+    "exclude_reports": [],
+    "include_reports": [],
+    "min_rows": 10000000,
+    "output_dir": "multi-models/reports/report_scoreboard_stage3_full_2026_05_26_stage3_only",
+    "reports_root": "multi-models/reports",
+    "top_k": 30
+  },
+  "filtered_rows": 2494,
+  "leakage_note": "This aggregates already-computed fold summaries only; it does not fit, select, or deploy a row-level model.",
+  "reports_scanned": 86,
+  "skipped": [],
+  "status": "diagnostic_only"
+}
