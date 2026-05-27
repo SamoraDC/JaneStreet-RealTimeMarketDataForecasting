@@ -1,0 +1,13 @@
+{
+  "base_artifact_source": "/home/samoradc/EntropyDynamics/JaneStreet/artifacts/jane_street_submission/base_models",
+  "candidate_name": "dynamic_gateway_rls_experts_alpha10000_f0p995",
+  "created_at_utc": "2026-05-24T17:41:16.058017+00:00",
+  "historical_max1398_global_r2": 0.015425344,
+  "kaggle_launcher": "kaggle_notebook_launcher.py",
+  "local_stage3_global_r2": 0.013836465,
+  "local_stage3_min_fold_r2": 0.007030887,
+  "meta_artifact_source": "/home/samoradc/EntropyDynamics/JaneStreet/artifacts/jane_street_submission/meta_rls_experts_alpha10000_f0p995",
+  "notebook": "jane_street_conservative_late_submission.ipynb",
+  "package_slug": "jane-street-conservative-rls-late-submission",
+  "submission_entrypoint": "submission/submission.py"
+}
