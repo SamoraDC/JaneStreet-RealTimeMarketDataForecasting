@@ -1,0 +1,2 @@
+run,iterations,best_feature,best_transform,best_valid_r2
+0,5,feature_26,top05_indicator,0.00034579509431553745
