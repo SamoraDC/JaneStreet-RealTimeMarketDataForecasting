@@ -1,0 +1,43 @@
+{
+  "base_columns": [
+    "tabm_prediction",
+    "tree_prediction",
+    "xgboost_prediction",
+    "lightgbm_prediction",
+    "ridge_calibrated_prediction",
+    "baseline_prediction",
+    "conservative_rls_prediction",
+    "aggressive_rls_prediction"
+  ],
+  "blend_partners": [
+    "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s25_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s25_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s100_prediction",
+    "conservative_rls_prediction",
+    "aggressive_rls_prediction"
+  ],
+  "causality_check": "passed: stack and walk-forward blend weights use only earlier folds; fixed blends use predeclared weights only",
+  "experiment_name": "strong_oof_cheap_subset_search_w010_s23aux8_stage3_v1",
+  "extra_columns": [
+    "tabm_w010_tabm_prediction",
+    "tabm_s23_aux8_tabm_prediction"
+  ],
+  "fixed_blend_weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "folds": 5,
+  "n_subsets": 4,
+  "risk_columns": [
+    "gateway_risk_conservative_rls_abs_pred_s25_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s25_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s100_prediction"
+  ],
+  "rows": 11028424,
+  "selection_check": "exploratory subset grid; promote only after independent confirmation",
+  "stack_alpha": 1000.0,
+  "target_leakage_check": "passed: no target-derived future fold feature is joined into prediction columns"
+}
