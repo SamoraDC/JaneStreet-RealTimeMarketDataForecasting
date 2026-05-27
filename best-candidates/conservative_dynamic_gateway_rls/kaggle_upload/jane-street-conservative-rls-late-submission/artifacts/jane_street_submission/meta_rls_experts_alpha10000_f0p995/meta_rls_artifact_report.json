@@ -1,0 +1,31 @@
+{
+  "artifact_type": "dynamic_rls_meta_state",
+  "feature_set": "experts",
+  "feature_columns": [
+    "tabm_prediction",
+    "tree_prediction",
+    "xgboost_prediction",
+    "lightgbm_prediction",
+    "ridge_calibrated_prediction"
+  ],
+  "ridge_alpha": 10000.0,
+  "forgetting_factor": 0.995,
+  "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+  "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions",
+  "oof_rows": 11028424,
+  "oof_folds": 5,
+  "baseline_summary": {
+    "folds": 5,
+    "rows": 11028424,
+    "weight_sum": 28034941.224243164,
+    "numerator": 17168908.631071106,
+    "denominator": 17394888.391910754,
+    "global_r2": 0.012991158997302743,
+    "mean_fold_r2": 0.012557736985361912,
+    "std_fold_r2": 0.007200950393067182,
+    "min_fold_r2": 0.006217640115304457,
+    "max_fold_r2": 0.0244614315666416
+  },
+  "convex_parameter_rows": 5,
+  "causality_note": "This state is fitted from saved OOF prediction rows only. Online submission updates must still use previous-day lagged responders joined to cached previous-day base predictions."
+}
