@@ -1,0 +1,31 @@
+{
+  "experiment": "clock_tournament",
+  "hypothesis": "Different causal clocks should be selected by downstream auxiliary role, not by descriptive balance alone.",
+  "n_folds": 5,
+  "train_window": 120,
+  "valid_window": 60,
+  "inner_oof_folds": 3,
+  "inner_valid_window": 20,
+  "engines": [
+    "xgboost",
+    "lightgbm"
+  ],
+  "train_sample_frac": 0.1,
+  "clock_candidates": [
+    "row_activity",
+    "batch_missing"
+  ],
+  "clock_bucket_count": 20,
+  "min_group_rows": 2000,
+  "best_strategy": {
+    "clock": "batch_missing",
+    "strategy": "clock_simplex_tail_q90_q100",
+    "folds": 5,
+    "mean_r2": 0.008865908294896729,
+    "std_r2": 0.006460987167852457,
+    "min_r2": 0.004536403701327352,
+    "max_r2": 0.019762287997375116,
+    "global_r2": 0.009010271128322644,
+    "validation_rows": 11028424
+  }
+}
