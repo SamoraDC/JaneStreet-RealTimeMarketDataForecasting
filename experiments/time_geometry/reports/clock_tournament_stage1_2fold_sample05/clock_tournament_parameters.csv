@@ -1,0 +1,59 @@
+fold,train_start,train_end,valid_start,valid_end,clock,strategy,group_columns,fallback_alpha,parameter_rows,fallback_weights
+rw_01,1539,1658,1659,1678,none,global_shrink,"",1.0,1,
+rw_01,1539,1658,1659,1678,clock_time,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,clock_time,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,clock_time,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,clock_time,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,row_activity,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,row_activity,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,64,
+rw_01,1539,1658,1659,1678,row_activity,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,row_activity,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,symbol_activity_ewm,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,symbol_activity_ewm,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,62,
+rw_01,1539,1658,1659,1678,symbol_activity_ewm,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,symbol_activity_ewm,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,batch_activity,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,batch_activity,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,batch_activity,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,batch_activity,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,batch_weight,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,batch_weight,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,72,
+rw_01,1539,1658,1659,1678,batch_weight,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,batch_weight,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,symbol_weight_cum,clock_shrink,clock_bucket,1.0,20,
+rw_01,1539,1658,1659,1678,symbol_weight_cum,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,78,
+rw_01,1539,1658,1659,1678,symbol_weight_cum,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_01,1539,1658,1659,1678,symbol_weight_cum,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_01,1539,1658,1659,1678,batch_missing,clock_shrink,clock_bucket,1.0,4,
+rw_01,1539,1658,1659,1678,batch_missing,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,15,
+rw_01,1539,1658,1659,1678,batch_missing,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,16,
+rw_01,1539,1658,1659,1678,batch_missing,clock_simplex,clock_bucket,,4,"{""lightgbm_prediction"": 0.7154189370782923, ""ridge_calibrated_prediction"": 0.2845810629217078, ""xgboost_prediction"": 0.0}"
+rw_02,1559,1678,1679,1698,none,global_shrink,"",1.0,1,
+rw_02,1559,1678,1679,1698,clock_time,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,clock_time,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,clock_time,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,clock_time,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,row_activity,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,row_activity,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,58,
+rw_02,1559,1678,1679,1698,row_activity,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,row_activity,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,symbol_activity_ewm,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,symbol_activity_ewm,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,54,
+rw_02,1559,1678,1679,1698,symbol_activity_ewm,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,symbol_activity_ewm,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,batch_activity,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,batch_activity,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,batch_activity,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,batch_activity,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,batch_weight,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,batch_weight,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,71,
+rw_02,1559,1678,1679,1698,batch_weight,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,batch_weight,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,symbol_weight_cum,clock_shrink,clock_bucket,1.0,20,
+rw_02,1559,1678,1679,1698,symbol_weight_cum,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,78,
+rw_02,1559,1678,1679,1698,symbol_weight_cum,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,80,
+rw_02,1559,1678,1679,1698,symbol_weight_cum,clock_simplex,clock_bucket,,20,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
+rw_02,1559,1678,1679,1698,batch_missing,clock_shrink,clock_bucket,1.0,4,
+rw_02,1559,1678,1679,1698,batch_missing,clock_weight_shrink,"clock_bucket,weight_bucket",1.0,15,
+rw_02,1559,1678,1679,1698,batch_missing,clock_predabs_shrink,"clock_bucket,ensemble_abs_bucket",1.0,16,
+rw_02,1559,1678,1679,1698,batch_missing,clock_simplex,clock_bucket,,4,"{""lightgbm_prediction"": 0.23420084488750897, ""ridge_calibrated_prediction"": 0.7101794790182022, ""xgboost_prediction"": 0.05561967609428889}"
