@@ -1,0 +1,2 @@
+__all__,rows,weight_sum,denominator,baseline_numerator,candidate_numerator,baseline_r2,candidate_r2,candidate_delta_r2
+__all__,11028424,28034942.0,17394888.0,17154204.626609083,17153519.623538543,0.013836442832567686,0.013875822394571191,0.00003937956200354531
