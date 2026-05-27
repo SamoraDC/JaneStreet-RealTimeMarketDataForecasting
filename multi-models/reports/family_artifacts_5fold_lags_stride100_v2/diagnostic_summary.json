@@ -1,0 +1,77 @@
+{
+  "audit": {
+    "fold_causality_check": "passed",
+    "n_context_features": 12,
+    "n_lag_features": 9,
+    "n_model_features": 100,
+    "selection_check": "passed: risk strengths and auxiliary bases are fixed by config, not selected inside validation",
+    "target_leakage_check": "passed"
+  },
+  "auxiliary_targets": [
+    {
+      "max_aux_r2": 0.195673139381923,
+      "mean_aux_r2": 0.1521946893546779,
+      "min_aux_r2": 0.11117254855492753,
+      "target_name": "high_error"
+    },
+    {
+      "max_aux_r2": 0.5054653965692426,
+      "mean_aux_r2": 0.4886994431303943,
+      "min_aux_r2": 0.4568886116677041,
+      "target_name": "abs_error"
+    },
+    {
+      "max_aux_r2": 0.16482659883566797,
+      "mean_aux_r2": 0.14755907534368223,
+      "min_aux_r2": 0.12045656786179748,
+      "target_name": "sq_error"
+    },
+    {
+      "max_aux_r2": 0.1625206211845035,
+      "mean_aux_r2": 0.14705957504548153,
+      "min_aux_r2": 0.11966018688744007,
+      "target_name": "sq_responder6"
+    },
+    {
+      "max_aux_r2": 0.5060341329536178,
+      "mean_aux_r2": 0.48729389019771957,
+      "min_aux_r2": 0.45567002129596657,
+      "target_name": "abs_responder6"
+    }
+  ],
+  "best_candidate": "latent_alpha_linear_stack",
+  "best_global_r2": 0.0033240141266441814,
+  "best_min_fold_r2": 0.0009579034695851307,
+  "family_best": [
+    {
+      "best_global_r2": 0.003020262733973711,
+      "best_min_fold_r2": -0.00017472054846479068,
+      "family": "residual_correction"
+    },
+    {
+      "best_global_r2": 0.0030437693135908495,
+      "best_min_fold_r2": -0.0002762177808217636,
+      "family": "alpha_latent_global"
+    },
+    {
+      "best_global_r2": 0.0033240141266441814,
+      "best_min_fold_r2": 0.0009579034695851307,
+      "family": "alpha_latent_stack"
+    },
+    {
+      "best_global_r2": 0.0014984829337738592,
+      "best_min_fold_r2": -0.0028754504263577285,
+      "family": "alpha_latent_recent"
+    },
+    {
+      "best_global_r2": 0.0028893270673003846,
+      "best_min_fold_r2": 9.663766661260897e-05,
+      "family": "risk_shrinkage"
+    },
+    {
+      "best_global_r2": 0.0024786787939831134,
+      "best_min_fold_r2": -0.00022807887460141174,
+      "family": "regime_microstructure"
+    }
+  ]
+}
