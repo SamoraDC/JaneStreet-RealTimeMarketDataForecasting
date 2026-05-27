@@ -116,6 +116,25 @@ The project uses evidence tiers:
 | Historical `max_date_id=1398` validation | Additional regime check against an earlier historical cutoff. |
 | Runtime package | Operational packaging evidence. It does not prove official leaderboard score. |
 
+Plain-language reading:
+
+- `Stage 3` is the recent local stress test. It was used to ask whether a
+  candidate still worked near the end of the available training timeline.
+- `Historical` validation is the broader temporal sanity check. It was used to
+  ask whether a candidate survived more than one local regime view.
+- `Runtime package` is an engineering-readiness check. It was used to ask
+  whether the method could be exported into the Kaggle-style online
+  `predict(test, lags)` loop.
+- `Official leaderboard` would require an accepted Kaggle submission. Local
+  validation and runtime packaging are not the same as official leaderboard
+  evidence.
+
+This is why the preserved candidates have different roles. The batch mean/std
+fixed blend is the strongest local Stage 3 result. The historical residual-tail
+candidate is the strongest wider historical result. The conservative dynamic
+RLS candidate is the most operationally ready because it has the closest
+Kaggle-style runtime package, even though it is not the highest local score.
+
 ## Experiment Record Format
 
 Most experiments in the private audit archive followed this structure:

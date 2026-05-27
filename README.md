@@ -56,6 +56,20 @@ historical, or Stage 3 validation results, not official Kaggle submissions.
 They are useful for score-scale context, but they do not assign an official
 competition rank to these candidates.
 
+How to read the validation labels:
+
+| Label | Plain meaning | What it proves | What it does not prove |
+| --- | --- | --- | --- |
+| `Stage 3` | The strict local recency test. It focuses on later temporal folds, closer to the end of the available training period. | The method still works in the recent local regime used for final model selection. | It does not prove the exact Kaggle public/private leaderboard score. |
+| `Historical` | A wider temporal confirmation test over an earlier historical cutoff. | The method is not only tuned to one recent local window and can survive a broader regime check. | It is not more official than Stage 3 and is not a Kaggle submission. |
+| `Kaggle runtime` | The code is shaped to run inside the competition-style `predict(test, lags)` gateway. | The package is operationally closer to a real submission path. | It does not prove leaderboard rank unless Kaggle accepts and scores the submission. |
+| `Official leaderboard` | A score returned by Kaggle after an actual submitted notebook/model. | The competition platform accepted and scored the submission. | It does not explain whether the method is robust locally unless audited separately. |
+
+In short: `Stage 3` answers "does this still work on the recent local regime?";
+`Historical` answers "does this also survive a broader temporal check?";
+`Kaggle runtime` answers "can this be packaged like a real submission?"; and
+`Official leaderboard` answers "what did Kaggle actually score?".
+
 ![Kaggle public leaderboard vs preserved local candidates](charts/figures/leaderboard_candidate_score_comparison.png)
 
 Chart data is preserved in
@@ -91,10 +105,11 @@ uv run python charts/generate_leaderboard_candidate_comparison.py
 | `conservative_dynamic_gateway_rls` | Stage 3 operational validation | `0.013836465051` | `-0.000053534949` |
 
 Some candidates appear more than once because this repository preserves both
-Stage 3 and historical validation views. Stage 3 is the stricter local recency
-view used for late-model selection, while historical validation gives a wider
-temporal confirmation. The conservative dynamic RLS Stage 3 line is also the
-closest local reference to the Kaggle-style runtime package.
+Stage 3 and historical validation views. The conservative dynamic RLS Stage 3
+line is the closest local reference to the Kaggle-style runtime package because
+that candidate has exported model artifacts, a submission entrypoint, and a
+causal gateway update path. The two stronger OOF references still require more
+export work before they are equally close to the online Kaggle contract.
 
 ## Reproducibility Boundary
 

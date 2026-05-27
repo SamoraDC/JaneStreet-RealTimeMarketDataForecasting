@@ -91,6 +91,27 @@ The project used several validation regimes. They were not interchangeable.
 The final preserved candidates were chosen because they had strong evidence in
 Stage 3, historical validation, or operational packaging.
 
+### How To Read Stage 3, Historical, Runtime, And Leaderboard Evidence
+
+These labels answer different questions. They should not be collapsed into one
+generic "score" column.
+
+| Evidence type | Question it answers | Correct interpretation |
+| --- | --- | --- |
+| Stage 3 | Does the method still work on the stricter recent local validation regime? | Use it for final local model selection and recency stress testing. |
+| Historical validation | Does the method also work across a wider earlier historical cutoff? | Use it as regime confirmation and robustness evidence. |
+| Kaggle runtime package | Can the method be exported into the online `predict(test, lags)` contract? | Use it as operational evidence that the idea can run like a submission. |
+| Official Kaggle leaderboard | What did Kaggle score after an accepted submission? | Use it as the only official competition ranking evidence. |
+
+The distinction matters because a method can be strong in one dimension and
+weak in another. For example, the batch mean/std fixed blend is the best local
+Stage 3 score, but it is not yet the closest runtime package. The conservative
+dynamic RLS line has a lower Stage 3 score, but it has the clearest Kaggle-style
+runtime path because it has exported artifacts, submission code, and causal
+gateway update logic. The historical residual-tail line has the best broader
+historical score, but it still requires more careful export and online auditing
+before it should be treated as an operational submission candidate.
+
 ## Rolling Windows
 
 ### Definition

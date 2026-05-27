@@ -3,6 +3,32 @@
 All labels, filenames, and descriptions in this generated gallery are in English.
 The charts are generated only from preserved real validation artifacts under `best-candidates/`.
 
+## How To Read These Charts
+
+These visuals are validation diagnostics, not official Kaggle leaderboard
+screenshots. They help explain why each candidate was preserved and what kind
+of evidence supports it.
+
+| Term | Simple meaning | How to read it in the charts |
+| --- | --- | --- |
+| `Stage 3` | The recent local validation view used for final model selection. | A strong Stage 3 score means the candidate performed well near the end of the available local timeline. |
+| `Historical` | A wider validation view over an earlier historical cutoff. | A strong historical score means the candidate also survived a broader regime check. |
+| `Runtime` | Code and artifacts prepared for the Kaggle-style `predict(test, lags)` loop. | Runtime readiness means the candidate is easier to turn into a real submission package. |
+| `Leaderboard` inside these chart names | Internal validation leaderboard among local candidates. | It is not the official Kaggle leaderboard unless explicitly labeled as Kaggle. |
+
+The three preserved candidates have different roles:
+
+- `batch-mean-std-fixed-blend` is the best local Stage 3 reference.
+- `historical-residual-tail` is the best wider historical reference.
+- `conservative-dynamic-gateway-rls` is the most operationally ready reference
+  because it is closest to the Kaggle runtime package.
+
+The important practical distinction is this: a higher local validation score is
+not automatically the easiest candidate to submit. The conservative dynamic RLS
+line has a lower Stage 3 score than the best OOF candidate, but it has exported
+artifacts and online gateway logic. The stronger OOF references need additional
+export and runtime work before they should be treated as equally submissible.
+
 ## batch-mean-std-fixed-blend
 
 - `chart`: [batch-mean-std-fixed-blend/charts/01_fold_r2_term_structure.png](batch-mean-std-fixed-blend/charts/01_fold_r2_term_structure.png) - Fold-level R2 profile versus the selected reference and the 0.020 target.
@@ -56,4 +82,3 @@ The charts are generated only from preserved real validation artifacts under `be
 - `animation-3d`: [historical-residual-tail/animations-3d/03_3d_error_energy_waterfall.gif](historical-residual-tail/animations-3d/03_3d_error_energy_waterfall.gif) - 3D waterfall of denominator, numerator, and explained error gap by fold.
 - `animation-3d`: [historical-residual-tail/animations-3d/04_3d_candidate_orbit.gif](historical-residual-tail/animations-3d/04_3d_candidate_orbit.gif) - 3D orbit connecting selected-candidate fold scores across available regimes.
 - `animation-3d`: [historical-residual-tail/animations-3d/05_3d_nonlinear_stability_manifold.gif](historical-residual-tail/animations-3d/05_3d_nonlinear_stability_manifold.gif) - Fixed-camera 3D stability manifold progressively completed with observed fold transitions.
-
