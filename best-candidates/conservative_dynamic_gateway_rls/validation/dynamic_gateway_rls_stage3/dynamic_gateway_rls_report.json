@@ -1,0 +1,49 @@
+{
+  "experiment": "dynamic_gateway_rls_stage3",
+  "rows": 11028424,
+  "folds": 5,
+  "expert_columns": [
+    "tabm_prediction",
+    "tree_prediction",
+    "xgboost_prediction",
+    "lightgbm_prediction",
+    "ridge_calibrated_prediction"
+  ],
+  "forgetting_factors": [
+    1.0,
+    0.999,
+    0.995
+  ],
+  "candidates": [
+    {
+      "name": "components_no_tree_ensemble_alpha1000",
+      "feature_set": "components_no_tree_ensemble",
+      "ridge_alpha": 1000.0
+    },
+    {
+      "name": "experts_alpha10000",
+      "feature_set": "experts",
+      "ridge_alpha": 10000.0
+    }
+  ],
+  "best": {
+    "strategy": "dynamic_gateway_rls_components_no_tree_ensemble_alpha1000_f0p995",
+    "method_family": "dynamic_gateway_rls",
+    "folds": 5,
+    "rows": 11028424,
+    "weight_sum": 28034941.224243164,
+    "numerator": 17153690.124160565,
+    "denominator": 17394888.391910758,
+    "global_r2": 0.013866042846377713,
+    "mean_fold_r2": 0.013480104352009192,
+    "std_fold_r2": 0.007879435573395677,
+    "min_fold_r2": 0.006970511244878019,
+    "max_fold_r2": 0.02674690185016826
+  },
+  "audit_status": {
+    "audit_rows": 1800,
+    "bad_updates": 0,
+    "all_strictly_past": true
+  },
+  "methodological_note": "forgetting_factor=1.0 should reproduce the frozen gateway online ridge. Factors below 1.0 are pre-registered dynamic RLS/Kalman-style alternatives and must be confirmed across Stage 3 and historical OOF before promotion."
+}
