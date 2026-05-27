@@ -1,0 +1,38 @@
+{
+  "experiment": "operational_time_feature_baseline",
+  "engine": "lightgbm",
+  "feature_set": "operational",
+  "n_folds": 2,
+  "train_window": 120,
+  "valid_window": 20,
+  "train_sample_frac": 0.05,
+  "model_features": 95,
+  "operational_features": [
+    "ot_time_frac",
+    "ot_time_sin",
+    "ot_time_cos",
+    "ot_symbol_tick_index",
+    "ot_symbol_weight_cum",
+    "ot_missing_count",
+    "ot_missing_frac",
+    "ot_source_activity",
+    "ot_symbol_weight_ewm_16",
+    "ot_source_activity_ewm_16",
+    "ot_missing_frac_ewm_16",
+    "ot_symbol_weight_ewm_64",
+    "ot_source_activity_ewm_64",
+    "ot_missing_frac_ewm_64"
+  ],
+  "summary": [
+    {
+      "folds": 2,
+      "mean_r2": 0.002248278926654357,
+      "std_r2": 0.0015196755787173016,
+      "min_r2": 0.001173706019739762,
+      "max_r2": 0.0033228518335689516,
+      "global_r2": 0.002345667275093666,
+      "train_sample_rows": 445734,
+      "validation_rows": 1492656
+    }
+  ]
+}
