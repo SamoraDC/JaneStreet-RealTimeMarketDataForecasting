@@ -1,0 +1,30 @@
+{
+  "baseline": "conservative_rls_prediction",
+  "baseline_r2": 0.013836442832567686,
+  "candidate": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+  "candidate_delta_r2": 3.937956200354531e-05,
+  "candidate_r2": 0.013875822394571191,
+  "config": {
+    "baseline": "conservative_rls_prediction",
+    "candidate": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "experiment_name": "strong_oof_stage3_conservative_s100_diagnostics",
+    "gateway_risk_profiles": [
+      "abs_pred"
+    ],
+    "gateway_risk_strengths": [
+      25.0,
+      100.0
+    ],
+    "max_rows_per_fold": null,
+    "output_dir": "multi-models/reports/strong_oof_stage3_conservative_s100_diagnostics",
+    "sample_stride": 1,
+    "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+    "time_bucket_size": 100,
+    "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions"
+  },
+  "experiment_name": "strong_oof_stage3_conservative_s100_diagnostics",
+  "gateway_bad_updates": 0,
+  "rows": 11028424,
+  "selection_status": "diagnostic only; candidate and baseline are fixed before slicing",
+  "weight_sum": 28034942.0
+}
