@@ -1,0 +1,218 @@
+{
+  "base_candidates": [
+    "tabm_prediction",
+    "tree_prediction",
+    "xgboost_prediction",
+    "lightgbm_prediction",
+    "ridge_calibrated_prediction",
+    "baseline_prediction",
+    "conservative_rls_prediction",
+    "aggressive_rls_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s25_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s25_prediction",
+    "gateway_risk_aggressive_rls_abs_pred_s100_prediction"
+  ],
+  "config": {
+    "contextual_blend_candidates": [],
+    "contextual_blend_group_specs": [],
+    "contextual_blend_min_group_rows": [
+      20000
+    ],
+    "contextual_blend_prior_strengths": [
+      1000.0
+    ],
+    "contextual_blend_time_bucket_sizes": [
+      100
+    ],
+    "experiment_name": "strong_oof_subset_s23aux8_s17_gateway_batch_rank_demean_smoke_stride5_v1",
+    "extra_prediction_dirs": [
+      "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed23_aux8_preds/validation_predictions",
+      "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed17_preds/validation_predictions"
+    ],
+    "extra_prediction_prefixes": [
+      "tabm_s23_aux8",
+      "tabm_s17"
+    ],
+    "fixed_blend_candidates": [
+      "strong_oof_ridge_stack_prediction",
+      "gateway_risk_conservative_rls_abs_pred_s100_prediction"
+    ],
+    "fixed_blend_weights": [
+      0.75
+    ],
+    "gateway_expert_expansions": [
+      "signed_square",
+      "cube",
+      "pair_product",
+      "batch_rank",
+      "batch_demean"
+    ],
+    "gateway_risk_profiles": [
+      "abs_pred"
+    ],
+    "gateway_risk_strengths": [
+      25.0,
+      100.0
+    ],
+    "include_extra_gateway_experts": false,
+    "include_gateway_risk_shrink": true,
+    "include_gateway_rls": true,
+    "max_rows_per_fold": null,
+    "min_group_rows": [
+      20000
+    ],
+    "min_mem_available_gb": 12.0,
+    "min_swap_free_gb": 4.0,
+    "online_affine_base_candidates": [],
+    "online_affine_forgetting_factors": [
+      1.0
+    ],
+    "online_affine_max_scale": 2.0,
+    "online_affine_min_scale": 0.0,
+    "online_affine_prior_strengths": [
+      1000.0
+    ],
+    "online_scale_base_candidates": [],
+    "online_scale_forgetting_factors": [
+      1.0
+    ],
+    "online_scale_max": 2.0,
+    "online_scale_min": 0.0,
+    "online_scale_prior_strengths": [
+      1000.0
+    ],
+    "output_dir": "multi-models/reports/strong_oof_subset_s23aux8_s17_gateway_batch_rank_demean_smoke_stride5_v1",
+    "raw_feature_columns": [],
+    "raw_train_parquet_dir": null,
+    "regime_base_candidates": [
+      "__none__"
+    ],
+    "residual_base_candidates": [
+      "__none__"
+    ],
+    "residual_features": [
+      "prediction_disagreement",
+      "tabm_tree_diff",
+      "abs_baseline_prediction",
+      "weight"
+    ],
+    "residual_tail_modes": [
+      "weight"
+    ],
+    "residual_tail_quantiles": [],
+    "risk_base_candidates": [
+      "__none__"
+    ],
+    "risk_shrink_strengths": [
+      0.0,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "sample_stride": 5,
+    "scale_prior_strengths": [
+      1000.0,
+      10000.0
+    ],
+    "stack_alphas": [
+      1000.0
+    ],
+    "strong_base_candidates": [
+      "tabm_prediction",
+      "tree_prediction",
+      "xgboost_prediction",
+      "lightgbm_prediction",
+      "ridge_calibrated_prediction",
+      "baseline_prediction",
+      "conservative_rls_prediction",
+      "aggressive_rls_prediction"
+    ],
+    "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+    "time_bucket_sizes": [
+      100
+    ],
+    "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions",
+    "walk_forward_blend_candidates": [],
+    "write_predictions": false
+  },
+  "contextual_blend_candidates": [],
+  "contextual_blend_group_specs": [],
+  "contextual_blend_min_group_rows": [
+    20000
+  ],
+  "contextual_blend_prior_strengths": [
+    1000.0
+  ],
+  "contextual_blend_time_bucket_sizes": [
+    100
+  ],
+  "experiment_name": "strong_oof_subset_s23aux8_s17_gateway_batch_rank_demean_smoke_stride5_v1",
+  "fixed_blend_candidates": [
+    "strong_oof_ridge_stack_prediction",
+    "gateway_risk_conservative_rls_abs_pred_s100_prediction"
+  ],
+  "fixed_blend_weights": [
+    0.75
+  ],
+  "fold_causality_check": "passed: walk-forward layers and residual tail thresholds fit only earlier folds; gateway updates use prior-date lag simulation; online scale/affine calibration updates only after each validation date is scored",
+  "folds": 5,
+  "gateway_bad_updates": 0,
+  "gateway_expert_expansions": [
+    "signed_square",
+    "cube",
+    "pair_product",
+    "batch_rank",
+    "batch_demean"
+  ],
+  "include_extra_gateway_experts": false,
+  "known_reference_points": {
+    "conservative_stage3_local": 0.013836465,
+    "historical_max1398": 0.015425344
+  },
+  "n_base_candidates": 12,
+  "n_folds": 5,
+  "n_model_features": 12,
+  "online_affine_base_candidates": [],
+  "online_affine_forgetting_factors": [
+    1.0
+  ],
+  "online_affine_max_scale": 2.0,
+  "online_affine_min_scale": 0.0,
+  "online_affine_prior_strengths": [
+    1000.0
+  ],
+  "online_scale_base_candidates": [],
+  "online_scale_forgetting_factors": [
+    1.0
+  ],
+  "online_scale_max": 2.0,
+  "online_scale_min": 0.0,
+  "online_scale_prior_strengths": [
+    1000.0
+  ],
+  "residual_base_candidates": [
+    "__none__"
+  ],
+  "residual_features": [
+    "prediction_disagreement",
+    "tabm_tree_diff",
+    "abs_baseline_prediction",
+    "weight"
+  ],
+  "residual_tail_modes": [
+    "weight"
+  ],
+  "residual_tail_quantiles": [],
+  "rows": 2205685,
+  "selection_check": "passed: all grids are reported as fixed candidates, no validation-best candidate is promoted inside code",
+  "stack_alphas": [
+    1000.0
+  ],
+  "target_leakage_check": "passed",
+  "uses_context_features": true,
+  "uses_gateway_risk_shrink": true,
+  "uses_gateway_rls": true,
+  "uses_processed_lags": false,
+  "walk_forward_blend_candidates": []
+}
