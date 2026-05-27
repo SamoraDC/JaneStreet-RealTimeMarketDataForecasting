@@ -1,0 +1,20 @@
+{
+  "baseline": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+  "baseline_r2": 0.013235539311064026,
+  "candidate": "gateway_risk_conservative_rls_abs_pred_s100_prediction_family_residual_prediction",
+  "candidate_delta_r2": 5.988561330340305e-07,
+  "candidate_r2": 0.013236138167197042,
+  "causality_status": "diagnostic only; candidate and baseline are frozen bridge predictions",
+  "config": {
+    "baseline": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "bridge_prediction_path": "multi-models/reports/strong_family_bridge_stride50_residual_gate_v1/bridge_predictions.parquet",
+    "candidate": "gateway_risk_conservative_rls_abs_pred_s100_prediction_family_residual_prediction",
+    "experiment_name": "strong_family_bridge_stride50_residual_diagnostics",
+    "output_dir": "multi-models/reports/strong_family_bridge_stride50_residual_gate_v1",
+    "time_bucket_size": 100
+  },
+  "experiment_name": "strong_family_bridge_stride50_residual_diagnostics",
+  "rows": 220570,
+  "selection_status": "diagnostic only; no candidate is refit or selected inside this diagnostic",
+  "weight_sum": 550684.125
+}
