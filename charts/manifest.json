@@ -1,0 +1,82 @@
+{
+  "real_data_only": true,
+  "notes": [
+    "No mock data was used.",
+    "PCA charts use deterministic real parquet rows selected by date/time stride for renderability.",
+    "Report charts use existing real validation reports under reports/.",
+    "Some color/z scales are clipped only for legibility and are labeled in figure titles."
+  ],
+  "parameters": {
+    "refresh_cache": false,
+    "date_stride": 17,
+    "time_stride": 37,
+    "max_pca_points": 50000,
+    "max_animation_points": 7000,
+    "gif_frames": 48,
+    "date_bucket_size": 50,
+    "time_bucket_size": 100
+  },
+  "pca_rows_rendered": 38341,
+  "pca_feature_count": 79,
+  "pca_explained_variance_ratio": [
+    0.10769636262797481,
+    0.08971907824567626,
+    0.07189620223924782
+  ],
+  "sources": [
+    "data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "reports/baselines/zero_baseline.csv",
+    "reports/baselines/ridge_sweep.csv",
+    "reports/experiments/ridge_calibration/ridge_calibration_summary.csv",
+    "reports/experiments/ridge_calibration/ridge_calibration_by_fold.csv",
+    "reports/experiments/ridge_calibration_high_weight_oof3x20/ridge_calibration_summary.csv",
+    "reports/experiments/ridge_calibration_high_weight_oof3x20/ridge_calibration_by_fold.csv",
+    "reports/experiments/sklearn_gbdt_conservative/sklearn_gbdt_summary.csv",
+    "reports/experiments/sklearn_gbdt_conservative/sklearn_gbdt_by_fold.csv",
+    "reports/experiments/ridge_gbdt_blend/ridge_gbdt_blend_summary.csv",
+    "reports/experiments/ridge_gbdt_blend/ridge_gbdt_blend_by_fold.csv",
+    "reports/experiments/ridge_gbdt_blend/time_bucket.csv",
+    "reports/experiments/ridge_gbdt_blend/weight_bucket.csv",
+    "reports/diagnostics/ridge_rw_02/by_date_id_symbol_id.csv",
+    "reports/diagnostics/ridge_rw_02_failure_slice/target_by_time_bucket.csv",
+    "reports/diagnostics/ridge_rw_02_failure_slice/feature_contributions.csv",
+    "reports/diagnostics/ridge_rw_02_failure_slice/summary.json"
+  ],
+  "artifacts": [
+    {
+      "kind": "figure",
+      "path": "graficos/figuras/geometria_pca_3d.png",
+      "description": "3D PCA geometry from deterministic real-data rows"
+    },
+    {
+      "kind": "figure",
+      "path": "graficos/figuras/natureza_temporal_intraday_3d.png",
+      "description": "3D and heatmap intraday target behavior from real parquet aggregates"
+    },
+    {
+      "kind": "figure",
+      "path": "graficos/figuras/comportamento_tecnicas_resultados_3d.png",
+      "description": "Real report metrics across Ridge, calibration, GBDT and blend"
+    },
+    {
+      "kind": "figure",
+      "path": "graficos/figuras/diagnostico_falha_rw02_3d.png",
+      "description": "3D and slice diagnostics for the real rw_02 failure report"
+    },
+    {
+      "kind": "animation",
+      "path": "graficos/animacoes/geometria_pca_3d_rotacao.gif",
+      "description": "FuncAnimation rotating 3D PCA scatter from real parquet sample"
+    },
+    {
+      "kind": "animation",
+      "path": "graficos/animacoes/evolucao_intraday_symbol_date_3d.gif",
+      "description": "FuncAnimation of real date/symbol target geometry across intraday buckets"
+    },
+    {
+      "kind": "animation",
+      "path": "graficos/animacoes/progressao_tecnicas_folds_3d.gif",
+      "description": "FuncAnimation of real fold metrics as techniques are added"
+    }
+  ]
+}
