@@ -1,0 +1,4 @@
+permutation_id,best_feature,best_transform,best_valid_r2
+0,feature_47,bottom05_indicator,0.00022669050526047396
+1,feature_54,sign,0.0003348075896568714
+2,feature_54,top05_indicator,0.00024124729328500738
