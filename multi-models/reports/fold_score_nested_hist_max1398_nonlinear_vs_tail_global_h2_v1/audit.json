@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "name": "nonlinear",
+      "path": "multi-models/reports/strong_oof_hist_max1398_gateway_signed_square_cube_pair_v1/fold_scores.csv"
+    },
+    {
+      "name": "tail",
+      "path": "multi-models/reports/strong_oof_hist_max1398_gateway_residual_tail_modes_v1/fold_scores.csv"
+    }
+  ],
+  "candidate_ids": [
+    "nonlinear/fixed_blend_5_w0p5_fixed_blend",
+    "nonlinear/fixed_blend_5_w0p75_fixed_blend",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction_residual_weight_and_abs_q0p95_residual_tail",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction_residual_weight_and_abs_q0p99_residual_tail",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction"
+  ],
+  "first_candidate_id": "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction",
+  "min_history_folds": 2,
+  "selection_metric": "global_r2",
+  "folds": [
+    "rw_01",
+    "rw_02",
+    "rw_03",
+    "rw_04",
+    "rw_05"
+  ],
+  "selected_candidate_ids": [
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "tail/gateway_risk_conservative_rls_abs_pred_s100_prediction_residual_weight_and_abs_q0p95_residual_tail"
+  ],
+  "target_leakage_check": "passed: selector uses only saved fold-level sufficient statistics",
+  "fold_causality_check": "passed: each selected fold uses only earlier folds except the predeclared first-fold candidate",
+  "row_level_prediction_check": "not applicable: this diagnostic selects whole-fold candidate statistics and does not construct row-level predictions",
+  "promotion_check": "diagnostic only unless reimplemented as a deployable predeclared time policy"
+}
