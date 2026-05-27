@@ -1,0 +1,100 @@
+{
+  "config": {
+    "auxiliary_base_candidates": [
+      "alpha_ridge_rank",
+      "alpha_rank_linear_stack"
+    ],
+    "cross_sectional_features": [
+      "feature_04",
+      "feature_47",
+      "feature_59"
+    ],
+    "experiment_name": "smoke_stride1000_v3",
+    "gap": 0,
+    "include_context_features": false,
+    "max_features": 30,
+    "max_train_rows": 20000,
+    "max_valid_rows": 10000,
+    "min_regime_rows": 200,
+    "n_folds": 2,
+    "output_dir": "multi-models/reports/smoke_stride1000_v3",
+    "pls_components": 8,
+    "rank_bins": 64,
+    "regime_prior_strength": 1000.0,
+    "residual_features": [
+      "feature_47",
+      "feature_59",
+      "feature_04"
+    ],
+    "ridge_alpha": 10000.0,
+    "risk_alpha": 1000.0,
+    "risk_strengths": [
+      0.0,
+      0.02,
+      0.05
+    ],
+    "sample_stride": 1000,
+    "seed": 37,
+    "stack_alpha": 1000.0,
+    "time_bucket_size": 100,
+    "train_parquet_dir": "/home/samoradc/EntropyDynamics/JaneStreet/data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "train_window": 20,
+    "use_processed_lags": false,
+    "valid_window": 5,
+    "write_predictions": false
+  },
+  "experiment_name": "smoke_stride1000_v3",
+  "fold_audit": [
+    {
+      "auxiliary_audit_count": 2,
+      "auxiliary_bases_evaluated": "alpha_ridge_rank,alpha_rank_linear_stack",
+      "fold": "rw_01",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_alpha_pls_rank": 0.050717881522760695,
+      "stack_coeff_alpha_ridge_rank": 0.004489126722782149,
+      "train_rows": 743,
+      "valid_rows": 189
+    },
+    {
+      "auxiliary_audit_count": 2,
+      "auxiliary_bases_evaluated": "alpha_ridge_rank,alpha_rank_linear_stack",
+      "fold": "rw_02",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_alpha_pls_rank": 0.040764003831154416,
+      "stack_coeff_alpha_ridge_rank": 0.003648169216034995,
+      "train_rows": 750,
+      "valid_rows": 188
+    }
+  ],
+  "folds": [
+    {
+      "name": "rw_01",
+      "train_end": 1688,
+      "train_start": 1669,
+      "valid_end": 1693,
+      "valid_start": 1689
+    },
+    {
+      "name": "rw_02",
+      "train_end": 1693,
+      "train_start": 1674,
+      "valid_end": 1698,
+      "valid_start": 1694
+    }
+  ],
+  "known_reference_points": {
+    "conservative_stage3_local": 0.013836465,
+    "historical_max1398": 0.015425344
+  },
+  "n_base_features": 30,
+  "n_context_features": 0,
+  "n_folds": 2,
+  "n_lag_features": 0,
+  "n_model_features": 30,
+  "residual_features": [
+    "feature_04"
+  ],
+  "target_leakage_check": "passed",
+  "uses_context_features": false,
+  "uses_processed_lags": false
+}
