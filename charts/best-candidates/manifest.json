@@ -1,0 +1,283 @@
+{
+  "description": "English visual analytics gallery for preserved Jane Street best candidates.",
+  "source_root": "best-candidates",
+  "target_r2": 0.02,
+  "generation_args": {
+    "frames": 24,
+    "fps": 8,
+    "top_n": 10
+  },
+  "artifact_count": 45,
+  "artifacts": [
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "chart",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/charts/01_fold_r2_term_structure.png",
+      "description": "Fold-level R2 profile versus the selected reference and the 0.020 target."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "chart",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/charts/02_candidate_r2_leaderboard.png",
+      "description": "Primary-report global R2 leaderboard with the selected candidate highlighted."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "chart",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/charts/03_risk_return_frontier.png",
+      "description": "Global R2 versus worst-fold R2 for the candidate family."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "chart",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/charts/04_weighted_error_budget.png",
+      "description": "Fold-level numerator, denominator, and explained weighted error budget."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "chart",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/charts/05_fold_dynamics_phase_map.png",
+      "description": "Nonlinear phase-space diagnostic of fold-to-fold R2 stability."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations/01_fold_r2_progression.gif",
+      "description": "Animated reveal of fold-level R2 for selected and reference candidates."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations/02_leaderboard_reveal.gif",
+      "description": "Animated candidate leaderboard growing from zero to realized global R2."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations/03_gap_to_target_walk.gif",
+      "description": "Animated path showing the remaining gap from observed R2 to the 0.020 target."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations/04_stability_frontier_scan.gif",
+      "description": "Animated scan of global R2 versus worst-fold R2 stability."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations/05_phase_space_flow.gif",
+      "description": "Animated nonlinear stability flow of fold-to-fold R2 transitions."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations-3d/01_3d_fold_surface.gif",
+      "description": "Fixed-camera 3D surface that progressively completes fold R2 across top candidates."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations-3d/02_3d_risk_return_frontier.gif",
+      "description": "Fixed-camera 3D risk-return-volatility frontier populated candidate by candidate."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations-3d/03_3d_error_energy_waterfall.gif",
+      "description": "3D waterfall of denominator, numerator, and explained error gap by fold."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations-3d/04_3d_candidate_orbit.gif",
+      "description": "3D orbit connecting selected-candidate fold scores across available regimes."
+    },
+    {
+      "candidate": "batch-mean-std-fixed-blend",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/batch-mean-std-fixed-blend/animations-3d/05_3d_nonlinear_stability_manifold.gif",
+      "description": "Fixed-camera 3D stability manifold progressively completed with observed fold transitions."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "chart",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/charts/01_fold_r2_term_structure.png",
+      "description": "Fold-level R2 profile versus the selected reference and the 0.020 target."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "chart",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/charts/02_candidate_r2_leaderboard.png",
+      "description": "Primary-report global R2 leaderboard with the selected candidate highlighted."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "chart",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/charts/03_risk_return_frontier.png",
+      "description": "Global R2 versus worst-fold R2 for the candidate family."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "chart",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/charts/04_weighted_error_budget.png",
+      "description": "Fold-level numerator, denominator, and explained weighted error budget."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "chart",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/charts/05_fold_dynamics_phase_map.png",
+      "description": "Nonlinear phase-space diagnostic of fold-to-fold R2 stability."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations/01_fold_r2_progression.gif",
+      "description": "Animated reveal of fold-level R2 for selected and reference candidates."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations/02_leaderboard_reveal.gif",
+      "description": "Animated candidate leaderboard growing from zero to realized global R2."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations/03_gap_to_target_walk.gif",
+      "description": "Animated path showing the remaining gap from observed R2 to the 0.020 target."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations/04_stability_frontier_scan.gif",
+      "description": "Animated scan of global R2 versus worst-fold R2 stability."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations/05_phase_space_flow.gif",
+      "description": "Animated nonlinear stability flow of fold-to-fold R2 transitions."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations-3d/01_3d_fold_surface.gif",
+      "description": "Fixed-camera 3D surface that progressively completes fold R2 across top candidates."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations-3d/02_3d_risk_return_frontier.gif",
+      "description": "Fixed-camera 3D risk-return-volatility frontier populated candidate by candidate."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations-3d/03_3d_error_energy_waterfall.gif",
+      "description": "3D waterfall of denominator, numerator, and explained error gap by fold."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations-3d/04_3d_candidate_orbit.gif",
+      "description": "3D orbit connecting selected-candidate fold scores across available regimes."
+    },
+    {
+      "candidate": "conservative-dynamic-gateway-rls",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/conservative-dynamic-gateway-rls/animations-3d/05_3d_nonlinear_stability_manifold.gif",
+      "description": "Fixed-camera 3D stability manifold progressively completed with observed fold transitions."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "chart",
+      "path": "charts/best-candidates/historical-residual-tail/charts/01_fold_r2_term_structure.png",
+      "description": "Fold-level R2 profile versus the selected reference and the 0.020 target."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "chart",
+      "path": "charts/best-candidates/historical-residual-tail/charts/02_candidate_r2_leaderboard.png",
+      "description": "Primary-report global R2 leaderboard with the selected candidate highlighted."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "chart",
+      "path": "charts/best-candidates/historical-residual-tail/charts/03_risk_return_frontier.png",
+      "description": "Global R2 versus worst-fold R2 for the candidate family."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "chart",
+      "path": "charts/best-candidates/historical-residual-tail/charts/04_weighted_error_budget.png",
+      "description": "Fold-level numerator, denominator, and explained weighted error budget."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "chart",
+      "path": "charts/best-candidates/historical-residual-tail/charts/05_fold_dynamics_phase_map.png",
+      "description": "Nonlinear phase-space diagnostic of fold-to-fold R2 stability."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation",
+      "path": "charts/best-candidates/historical-residual-tail/animations/01_fold_r2_progression.gif",
+      "description": "Animated reveal of fold-level R2 for selected and reference candidates."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation",
+      "path": "charts/best-candidates/historical-residual-tail/animations/02_leaderboard_reveal.gif",
+      "description": "Animated candidate leaderboard growing from zero to realized global R2."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation",
+      "path": "charts/best-candidates/historical-residual-tail/animations/03_gap_to_target_walk.gif",
+      "description": "Animated path showing the remaining gap from observed R2 to the 0.020 target."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation",
+      "path": "charts/best-candidates/historical-residual-tail/animations/04_stability_frontier_scan.gif",
+      "description": "Animated scan of global R2 versus worst-fold R2 stability."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation",
+      "path": "charts/best-candidates/historical-residual-tail/animations/05_phase_space_flow.gif",
+      "description": "Animated nonlinear stability flow of fold-to-fold R2 transitions."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/historical-residual-tail/animations-3d/01_3d_fold_surface.gif",
+      "description": "Fixed-camera 3D surface that progressively completes fold R2 across top candidates."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/historical-residual-tail/animations-3d/02_3d_risk_return_frontier.gif",
+      "description": "Fixed-camera 3D risk-return-volatility frontier populated candidate by candidate."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/historical-residual-tail/animations-3d/03_3d_error_energy_waterfall.gif",
+      "description": "3D waterfall of denominator, numerator, and explained error gap by fold."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/historical-residual-tail/animations-3d/04_3d_candidate_orbit.gif",
+      "description": "3D orbit connecting selected-candidate fold scores across available regimes."
+    },
+    {
+      "candidate": "historical-residual-tail",
+      "kind": "animation-3d",
+      "path": "charts/best-candidates/historical-residual-tail/animations-3d/05_3d_nonlinear_stability_manifold.gif",
+      "description": "Fixed-camera 3D stability manifold progressively completed with observed fold transitions."
+    }
+  ]
+}
