@@ -1,0 +1,6 @@
+clock_bucket,_simplex_rows,_simplex_weight_ridge_calibrated_prediction,_simplex_weight_xgboost_prediction,_simplex_weight_lightgbm_prediction,fold,clock
+0,698560,0.6944838270071932,0.30551617299280676,0.0,otf_01,batch_missing
+9,17760,0.7534112792714863,0.09208521140593608,0.15450350932257767,otf_01,batch_missing
+9,1824,0.9013488230909721,0.0,0.09865117690902801,otf_02,batch_missing
+0,632480,0.9781250534203685,0.021874946579631627,0.0,otf_02,batch_missing
+8,87824,0.5354330104204583,0.4645669895795417,0.0,otf_02,batch_missing
