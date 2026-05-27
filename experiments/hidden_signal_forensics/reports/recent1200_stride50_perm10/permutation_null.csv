@@ -1,0 +1,11 @@
+permutation_id,best_feature,best_transform,best_valid_r2
+0,feature_35,square_z,0.00009963510310462276
+1,feature_05,signed_tail05,0.00005611165821517439
+2,feature_59,sign,0.00009868893241837817
+3,feature_13,sign,0.00008086992707923013
+4,feature_39,bottom05_indicator,0.000059681361429531066
+5,feature_28,signed_tail05,0.00004909567593491815
+6,feature_58,bottom05_indicator,0.00008229384497937531
+7,feature_56,square_z,0.00008245021203967529
+8,feature_36,bottom05_indicator,0.00008155800911158195
+9,feature_28,top05_indicator,0.00009698840229388495
