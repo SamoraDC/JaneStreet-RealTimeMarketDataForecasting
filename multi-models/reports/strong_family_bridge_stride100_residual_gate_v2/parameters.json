@@ -1,0 +1,558 @@
+{
+  "group_0": [
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 1.0
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.2982122303878168
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.06228104679496698
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.09098651407664829
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.4840146599960225
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.12368649108003116
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.17420343968089247
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.5229968819954203
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.12703233080063883
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.1836242547666171
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": 0.6019393484717881
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": 0.12378428541624999
+    },
+    {
+      "component": "strong_family_alpha_stack",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": 0.1699599520956711
+    }
+  ],
+  "group_1": [
+    {
+      "component": "family_residual",
+      "feature": "__identity__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "family_residual",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.005611901360080711
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.0034516980448435616
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "value": 0.0023473314241483274
+    },
+    {
+      "component": "family_residual",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.012550683889298943
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.006242175970080074
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "value": 0.004037450356022332
+    },
+    {
+      "component": "family_residual",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.010769877514868478
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.005641733637314389
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "value": 0.004695395608312469
+    },
+    {
+      "component": "family_residual",
+      "feature": "latent_alpha_linear_stack",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": 0.013349089707005898
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": -0.000392533871447249
+    },
+    {
+      "component": "family_residual",
+      "feature": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "value": 0.001227649865666459
+    }
+  ],
+  "group_2": [
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "global_delta_r2": 0.0,
+      "n_open_groups": 0,
+      "policy": "open"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 1,
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "global_delta_r2": 0.0,
+      "n_closed_groups": 0,
+      "n_open_groups": 0,
+      "policy": "open"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 1,
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "global_delta_r2": 0.0003991171846546262,
+      "n_closed_groups": 1,
+      "n_open_groups": 9,
+      "policy": "open"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 1,
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "global_delta_r2": 0.0003393121095403893,
+      "n_closed_groups": 9,
+      "n_open_groups": 36,
+      "policy": "open"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 1,
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "global_delta_r2": 0.00010920826719550932,
+      "n_closed_groups": 43,
+      "n_open_groups": 61,
+      "policy": "open"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "global_delta_r2": 0.0,
+      "n_open_groups": 0,
+      "policy": "closed"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "global_delta_r2": 0.0,
+      "n_closed_groups": 0,
+      "n_open_groups": 0,
+      "policy": "closed"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "global_delta_r2": 0.0003991171846546262,
+      "n_closed_groups": 1,
+      "n_open_groups": 9,
+      "policy": "closed"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "global_delta_r2": 0.0003393121095403893,
+      "n_closed_groups": 9,
+      "n_open_groups": 36,
+      "policy": "closed"
+    },
+    {
+      "component": "family_residual_gate",
+      "default_gate": 0,
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "global_delta_r2": 0.00010920826719550932,
+      "n_closed_groups": 43,
+      "n_open_groups": 61,
+      "policy": "closed"
+    }
+  ],
+  "group_3": [
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.0,
+      "strength": 0.02
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.10313719484249084,
+      "strength": 0.02
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.089795827730201,
+      "strength": 0.02
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09166986862383361,
+      "strength": 0.02
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09608254919200923,
+      "strength": 0.02
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.0,
+      "strength": 0.05
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.10313719484249084,
+      "strength": 0.05
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.089795827730201,
+      "strength": 0.05
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09166986862383361,
+      "strength": 0.05
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09608254919200923,
+      "strength": 0.05
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.0,
+      "strength": 0.1
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.10313719484249084,
+      "strength": 0.1
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.089795827730201,
+      "strength": 0.1
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09166986862383361,
+      "strength": 0.1
+    },
+    {
+      "component": "family_risk_shrink",
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "risk_mean": 0.09608254919200923,
+      "strength": 0.1
+    }
+  ],
+  "group_4": [
+    {
+      "component": "family_regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.02
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.0700814256446187,
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.02
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1066147141471374,
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.02
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1197098414611883,
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.02
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.0783731853496588,
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.02
+    },
+    {
+      "component": "family_regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.05
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.0899567797381937,
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.05
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1328354395934577,
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.05
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1448740041649634,
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.05
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1023125415820554,
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.05
+    },
+    {
+      "component": "family_regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.1
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1209555890027312,
+      "fit_rows": 21587,
+      "fold": "rw_02",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.1
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1730387720707005,
+      "fit_rows": 43416,
+      "fold": "rw_03",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.1
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.18349887821911,
+      "fit_rows": 65719,
+      "fold": "rw_04",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.1
+    },
+    {
+      "component": "family_regime_scale",
+      "default_scale": 1.1393413337836884,
+      "fit_rows": 87925,
+      "fold": "rw_05",
+      "n_groups": 0,
+      "risk_column": "ridge_rank_alpha10000__risk_high_error_ridge_rank_score",
+      "strength": 0.1
+    }
+  ]
+}
