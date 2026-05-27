@@ -1,0 +1,83 @@
+{
+  "scope": {
+    "start_date_id": 1519,
+    "max_date_id": 1698,
+    "recent_days_requested": 180,
+    "feature_columns_used": [
+      "feature_00",
+      "feature_01",
+      "feature_02",
+      "feature_03",
+      "feature_04",
+      "feature_05",
+      "feature_06",
+      "feature_07",
+      "feature_08",
+      "feature_09",
+      "feature_10",
+      "feature_11",
+      "feature_12",
+      "feature_13",
+      "feature_14",
+      "feature_15",
+      "feature_16",
+      "feature_17",
+      "feature_18",
+      "feature_19",
+      "feature_20",
+      "feature_21",
+      "feature_22",
+      "feature_23"
+    ]
+  },
+  "grid": {
+    "max_time_id": 967,
+    "n_dates": 180,
+    "n_time_ids_min": 968,
+    "n_time_ids_max": 968,
+    "time_grid_constant_in_sample": true,
+    "date_symbol_time_completeness_min": 1.0,
+    "date_symbol_time_completeness_max": 1.0,
+    "rows_per_time_id_std_across_dates": 1.5825711190936878
+  },
+  "target_geometry": {
+    "time_id_target_energy_cv": 0.5693752765655518,
+    "top_5_time_ids_by_target_energy": [
+      {
+        "time_id": 0,
+        "target_energy": 47024.59375,
+        "target_abs_mean": 1.2842278480529785,
+        "feature_null_frac": 0.08405713182783246
+      },
+      {
+        "time_id": 1,
+        "target_energy": 44741.34375,
+        "target_abs_mean": 1.243579387664795,
+        "feature_null_frac": 0.08405713182783246
+      },
+      {
+        "time_id": 2,
+        "target_energy": 43890.33984375,
+        "target_abs_mean": 1.2246540784835815,
+        "feature_null_frac": 0.08405713182783246
+      },
+      {
+        "time_id": 3,
+        "target_energy": 41049.9453125,
+        "target_abs_mean": 1.2010318040847778,
+        "feature_null_frac": 0.08405713182783246
+      },
+      {
+        "time_id": 4,
+        "target_energy": 39860.1171875,
+        "target_abs_mean": 1.1778398752212524,
+        "feature_null_frac": 0.0423904651611658
+      }
+    ]
+  },
+  "interpretation": [
+    "A constant time_id grid supports a regular intraday index, but does not prove physical clock time.",
+    "Operational-time transforms are valid only as internal row-level features; final predictions must remain on original rows.",
+    "Target-energy and responder diagnostics are for research only and must not be used as online features."
+  ]
+}
