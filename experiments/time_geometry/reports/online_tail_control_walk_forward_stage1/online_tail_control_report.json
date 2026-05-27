@@ -1,0 +1,92 @@
+{
+  "anti_leakage_audit": {
+    "gateway_observability_max_abs_diff": 0.0,
+    "selection_used_to_gate_nested_strategy": true,
+    "selection_used_to_score_validation": false,
+    "train_selection_validation_disjoint": true,
+    "validation_used_to_choose_tail_rule": false
+  },
+  "best_validation_strategy": {
+    "folds": 5,
+    "global_r2": 0.0042362692787261125,
+    "max_r2": 0.00622678590984882,
+    "mean_r2": 0.004204123372235036,
+    "min_r2": 0.002583364470052474,
+    "std_r2": 0.0013610895480589173,
+    "strategy": "batch_missing_tail_frozen_q90_q99_q99_q100",
+    "validation_rows": 3716152
+  },
+  "causality_contract": {
+    "batch_missing_frac": "computed from the current (date_id,time_id) gateway batch only",
+    "clock_binner_and_simplex": "fit on inner OOF predictions from the train window",
+    "model_training_dates": "strictly before selection and validation",
+    "official_lags_note": "The active baseline excludes responder lag features after prior negative validation.",
+    "official_lags_used": false,
+    "tail_rule_family": "frozen before this script; selection window gates only the nested strategy",
+    "validation_targets_used_for_fitting": false
+  },
+  "clock": "batch_missing",
+  "engines": [
+    "xgboost",
+    "lightgbm"
+  ],
+  "experiment": "online_tail_control_walk_forward",
+  "folds": [
+    {
+      "fold": "otf_01",
+      "selection_end": 1598,
+      "selection_start": 1579,
+      "train_end": 1578,
+      "train_start": 1459,
+      "valid_end": 1618,
+      "valid_start": 1599
+    },
+    {
+      "fold": "otf_02",
+      "selection_end": 1618,
+      "selection_start": 1599,
+      "train_end": 1598,
+      "train_start": 1479,
+      "valid_end": 1638,
+      "valid_start": 1619
+    },
+    {
+      "fold": "otf_03",
+      "selection_end": 1638,
+      "selection_start": 1619,
+      "train_end": 1618,
+      "train_start": 1499,
+      "valid_end": 1658,
+      "valid_start": 1639
+    },
+    {
+      "fold": "otf_04",
+      "selection_end": 1658,
+      "selection_start": 1639,
+      "train_end": 1638,
+      "train_start": 1519,
+      "valid_end": 1678,
+      "valid_start": 1659
+    },
+    {
+      "fold": "otf_05",
+      "selection_end": 1678,
+      "selection_start": 1659,
+      "train_end": 1658,
+      "train_start": 1539,
+      "valid_end": 1698,
+      "valid_start": 1679
+    }
+  ],
+  "gbdt_seeds": "17,23,37",
+  "hypothesis": "A frozen high-weight tail-control rule remains useful when chosen before the external validation window.",
+  "max_iter": 80,
+  "selection_window": 20,
+  "tail_buckets": [
+    "q90_q99",
+    "q99_q100"
+  ],
+  "train_sample_frac": 0.1,
+  "train_window": 120,
+  "valid_window": 20
+}
