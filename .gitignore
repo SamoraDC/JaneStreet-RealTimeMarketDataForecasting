@@ -11,10 +11,10 @@ wheels/
 .venv
 
 # Large local data and generated outputs
-models/
-submission.parquet
-data/
-reports/
+/models/
+/submission.parquet
+/data/
+/reports/
 multi-models/reports/**/*.parquet
 charts/intermidiate-data/
 
