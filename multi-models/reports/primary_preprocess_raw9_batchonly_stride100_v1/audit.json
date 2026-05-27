@@ -1,0 +1,299 @@
+{
+  "artifact_manifest": [
+    {
+      "artifact": "ridge_rank_alpha10000",
+      "family": "alpha_latent_global",
+      "role": "Ridge on train-fitted rank encodings"
+    },
+    {
+      "artifact": "pls_rank_k8",
+      "family": "alpha_latent_recent",
+      "role": "PLS rank compression"
+    },
+    {
+      "artifact": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "family": "alpha_strong_existing",
+      "role": "best confirmed strong OOF candidate from gateway RLS adapter"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__feature_47_z_residual",
+      "family": "residual_correction",
+      "role": "global residual bridge"
+    },
+    {
+      "artifact": "pls_rank_k8__feature_59_z_residual",
+      "family": "residual_correction",
+      "role": "recent residual bridge"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_responder6_ridge_rank_score",
+      "family": "risk_volatility_uncertainty",
+      "role": "absolute responder risk target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_sq_responder6_ridge_rank_score",
+      "family": "risk_volatility_uncertainty",
+      "role": "squared responder risk target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_error_ridge_rank_score",
+      "family": "risk_volatility_uncertainty",
+      "role": "absolute model error target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_error_s0p05_micro_regime_scaled",
+      "family": "regime_microstructure",
+      "role": "observable microstructure scale gate"
+    }
+  ],
+  "config": {
+    "auxiliary_base_candidates": [],
+    "cross_sectional_features": [
+      "feature_04",
+      "feature_47",
+      "feature_59"
+    ],
+    "experiment_name": "primary_preprocess_raw9_batchonly_stride100_v1",
+    "gap": 0,
+    "high_error_quantile": 0.9,
+    "include_context_features": true,
+    "max_features": 79,
+    "max_train_rows": null,
+    "max_valid_rows": null,
+    "min_regime_rows": 2000,
+    "n_folds": 5,
+    "output_dir": "multi-models/reports/primary_preprocess_raw9_batchonly_stride100_v1",
+    "pls_components": 8,
+    "rank_bins": 255,
+    "raw_preprocess_features": [
+      "feature_47",
+      "feature_60",
+      "feature_06",
+      "feature_59",
+      "feature_58",
+      "feature_49",
+      "feature_04",
+      "feature_48",
+      "feature_16"
+    ],
+    "raw_preprocess_modes": [
+      "batch_rank",
+      "batch_demean",
+      "batch_zscore",
+      "batch_abs_zscore",
+      "batch_top_bottom"
+    ],
+    "regime_prior_strength": 1000.0,
+    "regime_symbol_mod": 8,
+    "residual_features": [
+      "feature_47",
+      "feature_59",
+      "feature_04"
+    ],
+    "ridge_alpha": 10000.0,
+    "risk_alpha": 1000.0,
+    "risk_auxiliary_targets": [],
+    "risk_strengths": [
+      0.0
+    ],
+    "sample_stride": 100,
+    "seed": 37,
+    "stack_alpha": 1000.0,
+    "time_bucket_size": 100,
+    "train_parquet_dir": "/home/samoradc/EntropyDynamics/JaneStreet/data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "train_window": 120,
+    "use_processed_lags": false,
+    "valid_window": 60,
+    "write_predictions": false
+  },
+  "experiment_name": "primary_preprocess_raw9_batchonly_stride100_v1",
+  "fold_audit": [
+    {
+      "auxiliary_audit_count": 0,
+      "auxiliary_bases_evaluated": "",
+      "fold": "rw_01",
+      "risk_auxiliary_targets": "",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.3345329472870111,
+      "stack_coeff_ridge_rank_alpha10000": 0.26377978137583746,
+      "train_rows": 44257,
+      "valid_rows": 21587
+    },
+    {
+      "auxiliary_audit_count": 0,
+      "auxiliary_bases_evaluated": "",
+      "fold": "rw_02",
+      "risk_auxiliary_targets": "",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.3607464015162106,
+      "stack_coeff_ridge_rank_alpha10000": 0.2939465552383086,
+      "train_rows": 43367,
+      "valid_rows": 21829
+    },
+    {
+      "auxiliary_audit_count": 0,
+      "auxiliary_bases_evaluated": "",
+      "fold": "rw_03",
+      "risk_auxiliary_targets": "",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.34144573606913853,
+      "stack_coeff_ridge_rank_alpha10000": 0.27246022722979607,
+      "train_rows": 43415,
+      "valid_rows": 22303
+    },
+    {
+      "auxiliary_audit_count": 0,
+      "auxiliary_bases_evaluated": "",
+      "fold": "rw_04",
+      "risk_auxiliary_targets": "",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.3083826606999034,
+      "stack_coeff_ridge_rank_alpha10000": 0.2546283999626875,
+      "train_rows": 44132,
+      "valid_rows": 22206
+    },
+    {
+      "auxiliary_audit_count": 0,
+      "auxiliary_bases_evaluated": "",
+      "fold": "rw_05",
+      "risk_auxiliary_targets": "",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.2881800694916298,
+      "stack_coeff_ridge_rank_alpha10000": 0.22870265102839862,
+      "train_rows": 44509,
+      "valid_rows": 22361
+    }
+  ],
+  "fold_causality_check": "passed",
+  "folds": [
+    {
+      "name": "rw_01",
+      "train_end": 1398,
+      "train_start": 1279,
+      "valid_end": 1458,
+      "valid_start": 1399
+    },
+    {
+      "name": "rw_02",
+      "train_end": 1458,
+      "train_start": 1339,
+      "valid_end": 1518,
+      "valid_start": 1459
+    },
+    {
+      "name": "rw_03",
+      "train_end": 1518,
+      "train_start": 1399,
+      "valid_end": 1578,
+      "valid_start": 1519
+    },
+    {
+      "name": "rw_04",
+      "train_end": 1578,
+      "train_start": 1459,
+      "valid_end": 1638,
+      "valid_start": 1579
+    },
+    {
+      "name": "rw_05",
+      "train_end": 1638,
+      "train_start": 1519,
+      "valid_end": 1698,
+      "valid_start": 1639
+    }
+  ],
+  "known_reference_points": {
+    "conservative_stage3_local": 0.013836465,
+    "historical_max1398": 0.015425344
+  },
+  "n_base_features": 79,
+  "n_context_features": 12,
+  "n_folds": 5,
+  "n_lag_features": 0,
+  "n_model_features": 145,
+  "n_raw_preprocessed_features": 54,
+  "raw_preprocess_features": [
+    "feature_47",
+    "feature_60",
+    "feature_06",
+    "feature_59",
+    "feature_58",
+    "feature_49",
+    "feature_04",
+    "feature_48",
+    "feature_16"
+  ],
+  "raw_preprocess_modes": [
+    "batch_rank",
+    "batch_demean",
+    "batch_zscore",
+    "batch_abs_zscore",
+    "batch_top_bottom"
+  ],
+  "raw_preprocessed_features": [
+    "feature_47__raw_batch_rank",
+    "feature_47__raw_batch_top10",
+    "feature_47__raw_batch_bottom10",
+    "feature_47__raw_batch_demean",
+    "feature_47__raw_batch_zscore",
+    "feature_47__raw_batch_abs_zscore",
+    "feature_60__raw_batch_rank",
+    "feature_60__raw_batch_top10",
+    "feature_60__raw_batch_bottom10",
+    "feature_60__raw_batch_demean",
+    "feature_60__raw_batch_zscore",
+    "feature_60__raw_batch_abs_zscore",
+    "feature_06__raw_batch_rank",
+    "feature_06__raw_batch_top10",
+    "feature_06__raw_batch_bottom10",
+    "feature_06__raw_batch_demean",
+    "feature_06__raw_batch_zscore",
+    "feature_06__raw_batch_abs_zscore",
+    "feature_59__raw_batch_rank",
+    "feature_59__raw_batch_top10",
+    "feature_59__raw_batch_bottom10",
+    "feature_59__raw_batch_demean",
+    "feature_59__raw_batch_zscore",
+    "feature_59__raw_batch_abs_zscore",
+    "feature_58__raw_batch_rank",
+    "feature_58__raw_batch_top10",
+    "feature_58__raw_batch_bottom10",
+    "feature_58__raw_batch_demean",
+    "feature_58__raw_batch_zscore",
+    "feature_58__raw_batch_abs_zscore",
+    "feature_49__raw_batch_rank",
+    "feature_49__raw_batch_top10",
+    "feature_49__raw_batch_bottom10",
+    "feature_49__raw_batch_demean",
+    "feature_49__raw_batch_zscore",
+    "feature_49__raw_batch_abs_zscore",
+    "feature_04__raw_batch_rank",
+    "feature_04__raw_batch_top10",
+    "feature_04__raw_batch_bottom10",
+    "feature_04__raw_batch_demean",
+    "feature_04__raw_batch_zscore",
+    "feature_04__raw_batch_abs_zscore",
+    "feature_48__raw_batch_rank",
+    "feature_48__raw_batch_top10",
+    "feature_48__raw_batch_bottom10",
+    "feature_48__raw_batch_demean",
+    "feature_48__raw_batch_zscore",
+    "feature_48__raw_batch_abs_zscore",
+    "feature_16__raw_batch_rank",
+    "feature_16__raw_batch_top10",
+    "feature_16__raw_batch_bottom10",
+    "feature_16__raw_batch_demean",
+    "feature_16__raw_batch_zscore",
+    "feature_16__raw_batch_abs_zscore"
+  ],
+  "residual_features": [
+    "feature_47",
+    "feature_59",
+    "feature_04"
+  ],
+  "risk_auxiliary_targets": [],
+  "selection_check": "passed: risk strengths and auxiliary bases are fixed by config, not selected inside validation",
+  "target_leakage_check": "passed",
+  "uses_context_features": true,
+  "uses_processed_lags": false
+}
