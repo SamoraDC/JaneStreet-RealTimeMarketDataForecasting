@@ -1,0 +1,66 @@
+{
+  "anti_leakage_audit": {
+    "direct_clock_simplex_eligible_for_selection": false,
+    "gateway_observability_max_abs_diff": 0.0,
+    "selection_used_to_choose_gate": true,
+    "train_selection_validation_disjoint": true,
+    "validation_used_to_choose_gate": false
+  },
+  "best_validation_strategy": {
+    "folds": 1,
+    "global_r2": 0.002687158810779189,
+    "max_r2": 0.002687158810779189,
+    "mean_r2": 0.002687158810779189,
+    "min_r2": 0.002687158810779189,
+    "selected_folds": 0,
+    "std_r2": null,
+    "strategy": "base_ensemble",
+    "validation_rows": 187792
+  },
+  "causality_contract": {
+    "batch_missing_frac": "computed from the current (date_id,time_id) gateway batch only",
+    "gate_fit": "fit on inner OOF predictions from the train window",
+    "gate_policy_family": "pre-specified by command-line candidate names before validation scoring",
+    "model_training_dates": "strictly before selection and validation",
+    "official_lags_used": false,
+    "selection_usage": "selection chooses among fitted policies; validation targets are not used for selection",
+    "validation_targets_used_for_fitting": false
+  },
+  "clock": "batch_missing",
+  "dataset_date_bounds": {
+    "max_date_id": 1698,
+    "min_date_id": 0
+  },
+  "engines": [
+    "xgboost"
+  ],
+  "experiment": "regime_confidence_gate_walk_forward",
+  "fold_date_bounds": {
+    "max_date_id": 1698,
+    "min_date_id": 0
+  },
+  "folds": [
+    {
+      "fold": "otf_01",
+      "selection_end": 1693,
+      "selection_start": 1689,
+      "train_end": 1688,
+      "train_start": 1649,
+      "valid_end": 1698,
+      "valid_start": 1694
+    }
+  ],
+  "gate_candidates": [
+    "global_blend",
+    "clock_blend",
+    "clock_weight_blend",
+    "clock_weight_shrink"
+  ],
+  "gbdt_seeds": "17",
+  "hypothesis": "Clock simplex is more useful as a causal regime/confidence signal over the active ensemble than as a fixed tail switch.",
+  "max_iter": 8,
+  "selection_window": 5,
+  "train_sample_frac": 0.005,
+  "train_window": 40,
+  "valid_window": 5
+}
