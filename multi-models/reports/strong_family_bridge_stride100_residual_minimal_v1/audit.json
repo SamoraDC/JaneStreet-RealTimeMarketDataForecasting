@@ -1,0 +1,60 @@
+{
+  "available_alpha_columns": [
+    "latent_alpha_linear_stack",
+    "ridge_rank_alpha10000"
+  ],
+  "available_residual_feature_columns": [
+    "latent_alpha_linear_stack",
+    "ridge_rank_alpha10000",
+    "ridge_rank_alpha10000__risk_high_error_ridge_rank_score"
+  ],
+  "available_risk_columns": [
+    "ridge_rank_alpha10000__risk_high_error_ridge_rank_score"
+  ],
+  "config": {
+    "alpha_columns": [
+      "latent_alpha_linear_stack",
+      "ridge_rank_alpha10000"
+    ],
+    "experiment_name": "strong_family_bridge_stride100_residual_minimal_v1",
+    "family_prediction_path": "multi-models/reports/family_artifacts_5fold_lags_stride100_v2/validation_predictions.parquet",
+    "gateway_risk_profiles": [
+      "abs_pred"
+    ],
+    "gateway_risk_strengths": [
+      100.0
+    ],
+    "min_regime_rows": 500,
+    "output_dir": "multi-models/reports/strong_family_bridge_stride100_residual_minimal_v1",
+    "regime_prior_strength": 1000.0,
+    "residual_alpha": 10000.0,
+    "residual_feature_columns": [
+      "latent_alpha_linear_stack",
+      "ridge_rank_alpha10000",
+      "ridge_rank_alpha10000__risk_high_error_ridge_rank_score"
+    ],
+    "risk_columns": [
+      "ridge_rank_alpha10000__risk_high_error_ridge_rank_score"
+    ],
+    "risk_strengths": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "stack_alpha": 1000.0,
+    "strong_base": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+    "symbol_mod": 8,
+    "tabm_prediction_dir": "reports/experiments/competitive_tabm_official_stage3_5fold_valid60_lags_online_lr1e4_4m_train700_seed37_aux8_preds/validation_predictions",
+    "time_bucket_size": 100,
+    "tree_prediction_dir": "reports/experiments/tree_engine_ensemble_xgb_lgb_sample10_seed_ensemble_preds/validation_predictions",
+    "write_predictions": true
+  },
+  "experiment_name": "strong_family_bridge_stride100_residual_minimal_v1",
+  "fold_causality_check": "passed: stack, residual, risk normalization and regime scales fit only earlier folds; gateway updates use prior-date simulator",
+  "gateway_bad_updates": 0,
+  "n_folds": 5,
+  "rows": 110286,
+  "selection_check": "passed: strengths/features are fixed by config and all candidates are reported",
+  "strong_base": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+  "target_leakage_check": "passed"
+}
