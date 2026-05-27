@@ -1,0 +1,168 @@
+{
+  "artifact_manifest": [
+    {
+      "artifact": "ridge_rank_alpha10000",
+      "family": "alpha_latent_global",
+      "role": "Ridge on train-fitted rank encodings"
+    },
+    {
+      "artifact": "pls_rank_k8",
+      "family": "alpha_latent_recent",
+      "role": "PLS rank compression"
+    },
+    {
+      "artifact": "gateway_risk_conservative_rls_abs_pred_s100_prediction",
+      "family": "alpha_strong_existing",
+      "role": "best confirmed strong OOF candidate from gateway RLS adapter"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__feature_47_z_residual",
+      "family": "residual_correction",
+      "role": "global residual bridge"
+    },
+    {
+      "artifact": "pls_rank_k8__feature_59_z_residual",
+      "family": "residual_correction",
+      "role": "recent residual bridge"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_responder6_ridge_rank",
+      "family": "risk_volatility_uncertainty",
+      "role": "absolute responder risk target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_sq_responder6_ridge_rank",
+      "family": "risk_volatility_uncertainty",
+      "role": "squared responder risk target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_error_ridge_rank",
+      "family": "risk_volatility_uncertainty",
+      "role": "absolute model error target"
+    },
+    {
+      "artifact": "ridge_rank_alpha10000__risk_abs_error_s0p05_micro_regime_scaled",
+      "family": "regime_microstructure",
+      "role": "observable microstructure scale gate"
+    }
+  ],
+  "config": {
+    "auxiliary_base_candidates": [
+      "ridge_rank_alpha10000",
+      "pls_rank_k8"
+    ],
+    "cross_sectional_features": [
+      "feature_04",
+      "feature_47",
+      "feature_59"
+    ],
+    "experiment_name": "family_artifacts_smoke_stride2500_features60",
+    "gap": 0,
+    "high_error_quantile": 0.9,
+    "include_context_features": true,
+    "max_features": 60,
+    "max_train_rows": 12000,
+    "max_valid_rows": 8000,
+    "min_regime_rows": 300,
+    "n_folds": 2,
+    "output_dir": "multi-models/reports/family_artifacts_smoke_stride2500_features60",
+    "pls_components": 8,
+    "rank_bins": 255,
+    "regime_prior_strength": 1000.0,
+    "regime_symbol_mod": 8,
+    "residual_features": [
+      "feature_47",
+      "feature_59",
+      "feature_04"
+    ],
+    "ridge_alpha": 10000.0,
+    "risk_alpha": 1000.0,
+    "risk_auxiliary_targets": [
+      "abs_responder6",
+      "sq_responder6",
+      "abs_error",
+      "sq_error",
+      "high_error"
+    ],
+    "risk_strengths": [
+      0.0,
+      0.05
+    ],
+    "sample_stride": 2500,
+    "seed": 37,
+    "stack_alpha": 1000.0,
+    "time_bucket_size": 100,
+    "train_parquet_dir": "/home/samoradc/EntropyDynamics/JaneStreet/data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "train_window": 30,
+    "use_processed_lags": false,
+    "valid_window": 10,
+    "write_predictions": true
+  },
+  "experiment_name": "family_artifacts_smoke_stride2500_features60",
+  "fold_audit": [
+    {
+      "auxiliary_audit_count": 2,
+      "auxiliary_bases_evaluated": "ridge_rank_alpha10000,pls_rank_k8",
+      "fold": "rw_01",
+      "risk_auxiliary_targets": "abs_responder6,sq_responder6,abs_error,sq_error,high_error",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.07081032283640197,
+      "stack_coeff_ridge_rank_alpha10000": 0.006183102159082352,
+      "train_rows": 448,
+      "valid_rows": 151
+    },
+    {
+      "auxiliary_audit_count": 2,
+      "auxiliary_bases_evaluated": "ridge_rank_alpha10000,pls_rank_k8",
+      "fold": "rw_02",
+      "risk_auxiliary_targets": "abs_responder6,sq_responder6,abs_error,sq_error,high_error",
+      "risk_strengths_are_fixed_grid": true,
+      "stack_coeff_pls_rank_k8": 0.06205253839139804,
+      "stack_coeff_ridge_rank_alpha10000": 0.0021717390254192555,
+      "train_rows": 447,
+      "valid_rows": 151
+    }
+  ],
+  "fold_causality_check": "passed",
+  "folds": [
+    {
+      "name": "rw_01",
+      "train_end": 1678,
+      "train_start": 1649,
+      "valid_end": 1688,
+      "valid_start": 1679
+    },
+    {
+      "name": "rw_02",
+      "train_end": 1688,
+      "train_start": 1659,
+      "valid_end": 1698,
+      "valid_start": 1689
+    }
+  ],
+  "known_reference_points": {
+    "conservative_stage3_local": 0.013836465,
+    "historical_max1398": 0.015425344
+  },
+  "n_base_features": 60,
+  "n_context_features": 12,
+  "n_folds": 2,
+  "n_lag_features": 0,
+  "n_model_features": 72,
+  "residual_features": [
+    "feature_47",
+    "feature_59",
+    "feature_04"
+  ],
+  "risk_auxiliary_targets": [
+    "abs_responder6",
+    "sq_responder6",
+    "abs_error",
+    "sq_error",
+    "high_error"
+  ],
+  "selection_check": "passed: risk strengths and auxiliary bases are fixed by config, not selected inside validation",
+  "target_leakage_check": "passed",
+  "uses_context_features": true,
+  "uses_processed_lags": false
+}
