@@ -1,0 +1,37 @@
+[project]
+name = "JaneStreet-RealTimeMarketDataForecasting"
+version = "0.1.0"
+description = "Late Submission to the Jane Street Real-Time Market Data Forecasting Competition at Kaggle that consists in Predict financial market responders using real-world data."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "catboost>=1.2.10",
+    "grpcio>=1.80.0",
+    "kaggle>=2.1.2",
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pillow>=12.2.0",
+    "polars>=1.40.1",
+    "pyarrow>=24.0.0",
+    "rtdl-num-embeddings>=0.0.12",
+    "scikit-learn>=1.8.0",
+    "tabm>=0.0.3",
+    "tabpfn>=8.0.3",
+    "xgboost>=3.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/janestreet"]
