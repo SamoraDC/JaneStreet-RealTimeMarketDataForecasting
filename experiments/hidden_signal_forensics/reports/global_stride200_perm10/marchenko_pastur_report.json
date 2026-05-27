@@ -1,0 +1,35 @@
+{
+  "bounds": {
+    "n_samples": 235637,
+    "n_features": 79,
+    "aspect_ratio": 0.0003352614402661721,
+    "lambda_minus": 0.9637149697829802,
+    "lambda_plus": 1.036955553097552
+  },
+  "eigenvalue_min": 0.0,
+  "eigenvalue_max": 8.391188750129949,
+  "upper_outlier_count": 19,
+  "lower_outlier_count": 59,
+  "upper_outlier_values": [
+    1.0947418478517161,
+    1.199669498504209,
+    1.228433992409126,
+    1.4061809510955952,
+    1.5050561569719083,
+    1.5289147678031538,
+    1.7879240077683303,
+    1.8717427489405805,
+    1.9250108044256282,
+    2.171844656399192,
+    2.249695624163994,
+    2.3316067300447227,
+    2.7543848672314346,
+    4.009049333563374,
+    4.408411106775919,
+    4.810065474574007,
+    6.049319352365619,
+    6.915171916353179,
+    8.391188750129949
+  ],
+  "interpretation": "Eigenvalues above lambda_plus indicate correlation structure beyond iid standardized noise. In real financial features this can be ordinary latent factor structure, not proof of synthetic generation."
+}
