@@ -1,7 +1,9 @@
 label,score,source
-Local: historical residual-tail,0.015630171202,Local OOF validation
-Local: conservative dynamic RLS,0.015425344,Local historical validation
-Local: batch mean/std fixed blend,0.014424968604,Local Stage 3 validation
+Local historical: residual-tail,0.015630171202,Local historical validation
+Local historical: dynamic RLS,0.015425344,Local historical validation
+Local Stage 3: batch mean/std blend,0.014424968604,Local Stage 3 validation
+Local Stage 3: residual-tail modes,0.013851999952,Local Stage 3 validation
+Local Stage 3: dynamic RLS,0.013836465051,Local Stage 3 validation
 Kaggle #1: ms capital,0.01389,Kaggle public leaderboard
 Kaggle #2: Patrick Yam,0.013273,Kaggle public leaderboard
 Kaggle #3: shorturl.at/LKhAD,0.013163,Kaggle public leaderboard

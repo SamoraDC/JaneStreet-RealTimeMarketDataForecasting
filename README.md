@@ -27,9 +27,9 @@ the preserved results.
 
 ## Leaderboard Context
 
-The table below compares the preserved local validation scores with the top
-public Kaggle leaderboard scores on the same numeric scale. The Kaggle rows are
-from a public leaderboard CSV downloaded with:
+The table below compares preserved local validation scores with the top public
+Kaggle leaderboard scores on the same numeric scale. The Kaggle rows are from a
+public leaderboard CSV downloaded with:
 
 ```bash
 kaggle competitions leaderboard \
@@ -39,11 +39,20 @@ kaggle competitions leaderboard \
 
 The downloaded file was named
 `jane-street-real-time-market-data-forecasting-publicleaderboard-2026-05-27T18:57:31.csv`.
-The official leaderboard page is
-<https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard>.
 
-Important interpretation boundary: the three preserved project scores are
-offline OOF or historical validation results, not official Kaggle submissions.
+Kaggle references:
+
+- Competition page:
+  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting>
+- Leaderboard:
+  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard>
+- Data page:
+  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data>
+- Rules:
+  <https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/rules>
+
+Important interpretation boundary: the preserved project rows are offline OOF,
+historical, or Stage 3 validation results, not official Kaggle submissions.
 They are useful for score-scale context, but they do not assign an official
 competition rank to these candidates.
 
@@ -78,12 +87,14 @@ uv run python charts/generate_leaderboard_candidate_comparison.py
 | `historical_residual_tail` | Historical OOF, `max_date_id=1398` | `0.015630171202` | `+0.001740171202` |
 | `conservative_dynamic_gateway_rls` | Historical gateway/RLS validation | `0.015425344` | `+0.001535344` |
 | `batch_mean_std_fixed_blend` | Stage 3 OOF validation | `0.014424968604` | `+0.000534968604` |
-| `conservative_dynamic_gateway_rls` | Stage 3 operational validation | `0.013836465` | `-0.000053535` |
+| `historical_residual_tail` | Stage 3 OOF validation, same residual-tail mode | `0.013851999952` | `-0.000038000048` |
+| `conservative_dynamic_gateway_rls` | Stage 3 operational validation | `0.013836465051` | `-0.000053534949` |
 
-The conservative dynamic RLS candidate appears twice because it has two
-preserved validation views: the historical confirmation is stronger
-numerically, while the Stage 3 operational validation is the closer reference
-for the Kaggle-style runtime package.
+Some candidates appear more than once because this repository preserves both
+Stage 3 and historical validation views. Stage 3 is the stricter local recency
+view used for late-model selection, while historical validation gives a wider
+temporal confirmation. The conservative dynamic RLS Stage 3 line is also the
+closest local reference to the Kaggle-style runtime package.
 
 ## Reproducibility Boundary
 

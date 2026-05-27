@@ -22,18 +22,28 @@ KAGGLE_PUBLIC_TOP = [
 
 LOCAL_CANDIDATES = [
     {
-        "label": "Local: historical residual-tail",
+        "label": "Local historical: residual-tail",
         "score": 0.015630171202,
-        "source": "Local OOF validation",
+        "source": "Local historical validation",
     },
     {
-        "label": "Local: conservative dynamic RLS",
+        "label": "Local historical: dynamic RLS",
         "score": 0.015425344,
         "source": "Local historical validation",
     },
     {
-        "label": "Local: batch mean/std fixed blend",
+        "label": "Local Stage 3: batch mean/std blend",
         "score": 0.014424968604,
+        "source": "Local Stage 3 validation",
+    },
+    {
+        "label": "Local Stage 3: residual-tail modes",
+        "score": 0.013851999952,
+        "source": "Local Stage 3 validation",
+    },
+    {
+        "label": "Local Stage 3: dynamic RLS",
+        "score": 0.013836465051,
         "source": "Local Stage 3 validation",
     },
 ]
@@ -42,7 +52,11 @@ LOCAL_CANDIDATES = [
 def write_csv(rows: list[dict[str, str | float]]) -> None:
     CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
     with CSV_PATH.open("w", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=["label", "score", "source"])
+        writer = csv.DictWriter(
+            file,
+            fieldnames=["label", "score", "source"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -53,12 +67,17 @@ def render_chart(rows: list[dict[str, str | float]]) -> None:
 
     labels = [str(row["label"]) for row in ordered]
     scores = [float(row["score"]) for row in ordered]
-    colors = [
-        "#c65f2e" if str(row["source"]).startswith("Local") else "#2f6f9f"
-        for row in ordered
-    ]
+    colors = []
+    for row in ordered:
+        source = str(row["source"])
+        if source.startswith("Local Stage 3"):
+            colors.append("#c65f2e")
+        elif source.startswith("Local historical"):
+            colors.append("#845d93")
+        else:
+            colors.append("#2f6f9f")
 
-    fig, ax = plt.subplots(figsize=(11.5, 6.2))
+    fig, ax = plt.subplots(figsize=(12.2, 7.4))
     bars = ax.barh(labels, scores, color=colors, edgecolor="#1d1d1f", linewidth=0.6)
     ax.invert_yaxis()
     ax.set_xlabel("Score / local global_r2")
@@ -78,7 +97,7 @@ def render_chart(rows: list[dict[str, str | float]]) -> None:
     ax.text(
         0.0,
         -0.16,
-        "Local bars are offline OOF or historical validation scores, not official Kaggle submissions.",
+        "Local bars are offline OOF, historical, or Stage 3 validation scores, not official Kaggle submissions.",
         transform=ax.transAxes,
         fontsize=9,
         color="#4a4a4a",
