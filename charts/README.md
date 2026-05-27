@@ -1,24 +1,35 @@
-# Graficos reais do projeto Jane Street
+# Real Jane Street Project Visuals
 
-Este diretorio contem o codigo e os artefatos de visualizacao gerados a partir de:
+This directory contains visualization code and generated chart artifacts derived from real project evidence:
 
 - `data/raw/jane-street-real-time-market-data-forecasting/train.parquet`
-- CSVs/JSONs reais em `reports/`
+- real CSV and JSON outputs under `reports/`
+- preserved candidate artifacts under `best-candidates/`
 
-Nao ha dados mock nos graficos. Algumas visualizacoes usam amostras deterministicas ou agregados cacheados apenas para manter renderizacao e legibilidade viaveis; as amostras ainda sao linhas reais do parquet local.
+The charts do not use mock data. Some visualizations use deterministic samples or cached aggregates to keep rendering time and readability practical; those samples are still derived from real local parquet rows or real validation artifacts.
 
-## Gerar tudo
+## Contents
+
+- `figures/`: static PNG figures for project-level exploratory analysis.
+- `animations/`: project-level GIF animations generated with `matplotlib.animation.FuncAnimation`.
+- `best-candidates/`: static and animated visual analytics for the three preserved reference candidates.
+- `intermidiate-data/`: local cached aggregates derived from real data and ignored by Git.
+- `manifest.json`: source paths, parameters, and generated project-level visual files.
+- `generate_best_candidate_visuals.py`: generator for the preserved-candidate visual gallery.
+- `gerar_graficos.py`: legacy generator for project-level figures and animations.
+
+## Regeneration
+
+Generate the project-level visual package:
 
 ```bash
-uv run python graficos/gerar_graficos.py
+uv run python charts/gerar_graficos.py
 ```
 
-Saidas:
+Generate the preserved-candidate visual gallery:
 
-- `graficos/figuras/`: PNGs estaticos.
-- `graficos/animacoes/`: GIFs gerados com `matplotlib.animation.FuncAnimation`.
-- `graficos/dados_intermediarios/`: caches derivados dos dados reais.
-- `graficos/manifest.json`: fontes, parametros e arquivos gerados.
+```bash
+uv run python charts/generate_best_candidate_visuals.py
+```
 
-Use `--refresh-cache` para forcar recomputacao dos agregados reais.
-
+Use `--refresh-cache` with the project-level generator to recompute real-data aggregates instead of reusing cached intermediate files.
