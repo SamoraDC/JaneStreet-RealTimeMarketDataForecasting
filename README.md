@@ -25,6 +25,66 @@ generated outputs, and a code snapshot.
 Read `best-candidates/README.md` first if your goal is to reproduce or audit
 the preserved results.
 
+## Leaderboard Context
+
+The table below compares the preserved local validation scores with the top
+public Kaggle leaderboard scores on the same numeric scale. The Kaggle rows are
+from a public leaderboard CSV downloaded with:
+
+```bash
+kaggle competitions leaderboard \
+  -c jane-street-real-time-market-data-forecasting \
+  --download
+```
+
+The downloaded file was named
+`jane-street-real-time-market-data-forecasting-publicleaderboard-2026-05-27T18:57:31.csv`.
+The official leaderboard page is
+<https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/leaderboard>.
+
+Important interpretation boundary: the three preserved project scores are
+offline OOF or historical validation results, not official Kaggle submissions.
+They are useful for score-scale context, but they do not assign an official
+competition rank to these candidates.
+
+![Kaggle public leaderboard vs preserved local candidates](charts/figures/leaderboard_candidate_score_comparison.png)
+
+Chart data is preserved in
+`charts/leaderboard_candidate_score_comparison.csv` and can be regenerated with:
+
+```bash
+uv run python charts/generate_leaderboard_candidate_comparison.py
+```
+
+### Top Public Leaderboard Scores
+
+| Public rank | Team name | Public score |
+| --- | --- | --- |
+| 1 | `ms capital` | `0.013890` |
+| 2 | `Patrick Yam` | `0.013273` |
+| 3 | `shorturl.at/LKhAD` | `0.013163` |
+| 4 | `Haoze Hou` | `0.011683` |
+| 5 | `hyd` | `0.011449` |
+| 6 | `Thomas Dueholm Hansen` | `0.010675` |
+| 7 | `leo` | `0.010480` |
+| 8 | `Evgeniia Grigoreva` | `0.010434` |
+| 9 | `HAO LI` | `0.010417` |
+| 10 | `ponythewhite` | `0.010293` |
+
+### Preserved Local Scores Versus Public Rank 1
+
+| Candidate | Validation regime | Local score used for comparison | Delta vs public #1 `ms capital` |
+| --- | --- | --- | --- |
+| `historical_residual_tail` | Historical OOF, `max_date_id=1398` | `0.015630171202` | `+0.001740171202` |
+| `conservative_dynamic_gateway_rls` | Historical gateway/RLS validation | `0.015425344` | `+0.001535344` |
+| `batch_mean_std_fixed_blend` | Stage 3 OOF validation | `0.014424968604` | `+0.000534968604` |
+| `conservative_dynamic_gateway_rls` | Stage 3 operational validation | `0.013836465` | `-0.000053535` |
+
+The conservative dynamic RLS candidate appears twice because it has two
+preserved validation views: the historical confirmation is stronger
+numerically, while the Stage 3 operational validation is the closer reference
+for the Kaggle-style runtime package.
+
 ## Reproducibility Boundary
 
 The repository can reproduce the local research results from a full checkout
