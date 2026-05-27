@@ -1,0 +1,63 @@
+{
+  "headline": {
+    "rows": 250000,
+    "train_rows": 186328,
+    "valid_rows": 63672,
+    "date_min": 900,
+    "date_max": 1461,
+    "split_date": 1321,
+    "top_features": [
+      "feature_36",
+      "feature_04",
+      "feature_06",
+      "feature_49",
+      "feature_07",
+      "feature_01",
+      "feature_70",
+      "feature_45",
+      "feature_47",
+      "feature_72",
+      "feature_39",
+      "feature_58",
+      "feature_48",
+      "feature_12"
+    ],
+    "best_univariate": "feature_36::z",
+    "best_univariate_valid_r2": 0.0015778120610383528,
+    "best_interaction": "feature_36:feature_58::z_diff",
+    "best_interaction_valid_r2": 0.0012282036124739992,
+    "best_cross_sectional": "feature_36::cs_z::date",
+    "best_cross_sectional_valid_r2": 0.0013687083951414714,
+    "best_latent_model": "pls_rank_k8",
+    "best_latent_valid_r2": 0.0030247820411032356,
+    "best_residual_final_r2": 0.003337476701052444,
+    "best_residual_delta_r2": 0.00031269465994920864,
+    "iaaft_best_null_r2": 0.00028714147771990994,
+    "interaction_null_max_r2": 0.0001374881134207362
+  },
+  "args": {
+    "train_parquet_dir": "/home/samoradc/EntropyDynamics/JaneStreet/data/raw/jane-street-real-time-market-data-forecasting/train.parquet",
+    "output_dir": "experiments/hidden_signal_forensics/reports/deep_recent900_stride80_250k",
+    "sample_stride": 80,
+    "max_rows": 250000,
+    "date_start": 900,
+    "date_end": null,
+    "valid_day_fraction": 0.25,
+    "top_features": 14,
+    "null_runs": 8,
+    "iaaft_runs": 4,
+    "iaaft_iterations": 20,
+    "seed": 37
+  },
+  "audit": {
+    "leakage_status": "All model-selection screens fit parameters on train and report validation R2; cross-sectional transforms use same-row feature groups only and are diagnostic.",
+    "selection_bias_status": "Univariate/interactions are adaptive screens. Promotion requires frozen validation on separate windows.",
+    "nulls": [
+      "iid",
+      "block",
+      "date",
+      "circular",
+      "iaaft"
+    ]
+  }
+}
