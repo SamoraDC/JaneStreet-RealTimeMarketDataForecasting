@@ -1,0 +1,9 @@
+null_kind,run,valid_r2,left,right,interaction
+iid,0,0.0002428910027600928,feature_06,feature_22,z_product
+iid,1,0.0004234783289235322,feature_57,feature_22,z_product
+block,0,0.0004344141647942834,feature_06,feature_49,z_product
+block,1,0.000285780310518402,feature_37,feature_22,rank_product
+date,0,0.0003032028687599553,feature_06,feature_22,z_product
+date,1,0.00020983122738538196,feature_57,feature_47,z_diff
+circular,0,0.0001819995706336952,feature_37,feature_22,sign_product
+circular,1,0.0002659170014873702,feature_06,feature_22,z_diff
