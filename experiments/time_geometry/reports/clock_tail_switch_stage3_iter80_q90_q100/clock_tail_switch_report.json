@@ -1,0 +1,32 @@
+{
+  "experiment": "clock_tail_switch",
+  "input": "experiments/time_geometry/reports/clock_tournament_stage3_5fold60_sample10_seed_ensemble_iter80/clock_tournament_weight_bucket_by_fold.csv",
+  "base_clock": "none",
+  "base_strategy": "base_ensemble",
+  "tail_buckets": [
+    "q90_q99",
+    "q99_q100"
+  ],
+  "candidates": [
+    [
+      "row_activity",
+      "clock_simplex"
+    ],
+    [
+      "batch_missing",
+      "clock_simplex"
+    ]
+  ],
+  "best_strategy": {
+    "candidate_clock": "batch_missing",
+    "candidate_strategy": "clock_simplex",
+    "tail_buckets": "q90_q99,q99_q100",
+    "folds": 5,
+    "validation_rows": 11028424,
+    "mean_r2": 0.008865908294896507,
+    "std_r2": 0.006460987167852605,
+    "min_fold_r2": 0.00453640370132713,
+    "max_fold_r2": 0.019762287997375116,
+    "global_r2": 0.009010271128322422
+  }
+}
