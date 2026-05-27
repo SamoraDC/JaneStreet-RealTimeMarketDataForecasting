@@ -1,0 +1,1657 @@
+{
+  "group_0": [
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tabm_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tree_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "xgboost_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "lightgbm_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "ridge_calibrated_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "baseline_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "conservative_rls_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 1.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "aggressive_rls_prediction",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tabm_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.03381647049529275
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tree_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.015149922875606632
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "xgboost_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.013714467390159938
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "lightgbm_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.018498875190705533
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "ridge_calibrated_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.01873256539995373
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.03381647049529276
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "conservative_rls_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.033797306275991874
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "aggressive_rls_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.03364339149550166
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tabm_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.10850281834460072
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tree_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.03845017417005014
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "xgboost_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.03750804958213596
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "lightgbm_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.036420695662746284
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "ridge_calibrated_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.03798230276502132
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.09168200226427459
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "conservative_rls_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.10803445236107695
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "aggressive_rls_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.10462701225805984
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tabm_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.11628485108577688
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tree_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.042647300468827434
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "xgboost_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.04071430733237562
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "lightgbm_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.04162650699925725
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "ridge_calibrated_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.01925414835862724
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.09991214771172292
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "conservative_rls_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.11579387093653531
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "aggressive_rls_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.11216497745073747
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tabm_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.12936113372601288
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "tree_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.044638577819450624
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "xgboost_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.042867684913448736
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "lightgbm_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.046721010030998086
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "ridge_calibrated_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.017646803640252246
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.11413529878552076
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "conservative_rls_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.12891261630161516
+    },
+    {
+      "component": "strong_oof_ridge_stack",
+      "feature": "aggressive_rls_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.1255796421866459
+    }
+  ],
+  "group_1": [
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.028137084107342204
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.007653142954204841
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.0008561512226897148
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.018327539431514377
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04053626706536572
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.007116010706815453
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.035874342047269296
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0033626672185807023
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.032229924512990164
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.004156802865320874
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.028273006850483434
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.00041961127710432355
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.028874203504373808
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0019366708981661718
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.03163729987512724
+    },
+    {
+      "component": "tabm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.003033611480938357
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.027668933507471263
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.04690133975415964
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.001808938803196784
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.019318359058705555
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.044451062015533456
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.06481808814284593
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.035544037259543255
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0036755390473084287
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03438899089709104
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.060914977093077444
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.028208081810546525
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.0008611215261596601
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.030230526099679154
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.06452616825618024
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.03195574543977179
+    },
+    {
+      "component": "tree_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0053029694293625935
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.030948259670673578
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.047105781680607854
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.0006881085496765689
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.019802135140848796
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04486377579587447
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.06519706654518577
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.037952424417958194
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0038540106144388103
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03493810225685688
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.061178507654749754
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.030313316928450202
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.0009942124242803682
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.02997004943389406
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.06484198478485712
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.032972507422749715
+    },
+    {
+      "component": "xgboost_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.005326980562961692
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.031420812024252585
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.04020678438563543
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.004565611325566304
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.019365534587616
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04474303422042257
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.061776405401461114
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.038249898202658957
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0039011188348334956
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03434461521706332
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.058236531254816024
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.030120630808874196
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.001104205472298569
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.029341041798552677
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.0625140675308066
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.032916426196897455
+    },
+    {
+      "component": "lightgbm_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.005587340767660715
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.01948431651125955
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.04639108893351163
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": 0.0046063325012584465
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.01811093968435342
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.10087786445235976
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.07566429076474347
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.045083586378367284
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.003182360611137698
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.07836218074061017
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.07072984693129385
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.034136831431963555
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.001026122584652822
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.07052010312901345
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.07483458974082748
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.041148640645083556
+    },
+    {
+      "component": "ridge_calibrated_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.005358163552840984
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.028137084107342204
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.007653142954204841
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.0008561512226897148
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.018327539431514377
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04725762867144754
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.004933071957638001
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.03931621578722789
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0033388824122940037
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03827194972262239
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.0053903097974814405
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.03087561410172147
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.00025982334327956597
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.03541553386368578
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.00522988092412949
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.03392089621101642
+    },
+    {
+      "component": "baseline_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0031236266837849683
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.028118441469494115
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.007655482219770463
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.0008889265305408196
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.018330711227250825
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04056118961307309
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.006982542325179125
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.03579084920950912
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0033681429569944383
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03227361724284435
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.004057702587651878
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.028216006265189237
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.0004125970282304946
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.02893457833355883
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0018810146092192244
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.03158846417231477
+    },
+    {
+      "component": "conservative_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.003037855394823791
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.02798844528151186
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.007631952354991722
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.0011001794244889303
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.018356467161282496
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.04086673423056861
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0058887624472763415
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.035305303355650644
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.003407297527983805
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.03271111643190054
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.0032435701431757368
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.02790897137375108
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.00036024644141183367
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.02949434571644873
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0013974814922594666
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0313384900671075
+    },
+    {
+      "component": "aggressive_rls_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.0030656614261620986
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "__none_first_fold__",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "value": 0.0
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.028118441469494115
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.007655482219770463
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.0008889265305408196
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "value": -0.018330711227250825
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.05663181034516426
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": 0.03153357757980737
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.02692036529074676
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "value": -0.0036103730910782565
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.04608692054589283
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": 0.031338718423074036
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.02292461860235212
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "value": -0.00047617257509215274
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "prediction_disagreement",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.0410868169255846
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "tabm_tree_diff",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": 0.03671990299842302
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "abs_baseline_prediction",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.030242602520729894
+    },
+    {
+      "component": "strong_oof_ridge_stack_prediction_residual",
+      "feature": "weight",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "value": -0.004236850744976905
+    }
+  ],
+  "group_2": [
+    {
+      "base": "baseline_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.0
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.02
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.05
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.0
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.02
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.05
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.0
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.02
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.05
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.0
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.02
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "risk_shrink",
+      "risk_mean": 1.7926535811596618,
+      "strength": 0.05
+    }
+  ],
+  "group_3": [
+    {
+      "base": "baseline_prediction",
+      "component": "regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "group": "__first_fold__",
+      "scale": 1.0
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "regime_scale",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 0.810006573600663,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "regime_scale",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.150665796400533,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "regime_scale",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.1788186634634725,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "baseline_prediction",
+      "component": "regime_scale",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 1,
+      "prior_strength": 1000.0,
+      "scale": 1.154391640847844,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "group": "__first_fold__",
+      "scale": 1.0
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 0.8095288253480506,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.0436197436985224,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.073982020339021,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "conservative_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 1,
+      "prior_strength": 1000.0,
+      "scale": 1.0726916841994232,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "group": "__first_fold__",
+      "scale": 1.0
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 0.8066402436087189,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.059007435361189,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.088498242141377,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "aggressive_rls_prediction",
+      "component": "regime_scale",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 1,
+      "prior_strength": 1000.0,
+      "scale": 1.0821916757458716,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "regime_scale",
+      "fit_rows": 0,
+      "fold": "rw_01",
+      "group": "__first_fold__",
+      "scale": 1.0
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "regime_scale",
+      "fit_rows": 2159,
+      "fold": "rw_02",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 0.8095288253480506,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "regime_scale",
+      "fit_rows": 4342,
+      "fold": "rw_03",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.1302768717680656,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "regime_scale",
+      "fit_rows": 6572,
+      "fold": "rw_04",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 0,
+      "prior_strength": 1000.0,
+      "scale": 1.229308621338104,
+      "time_bucket_size": 100
+    },
+    {
+      "base": "strong_oof_ridge_stack_prediction",
+      "component": "regime_scale",
+      "fit_rows": 8793,
+      "fold": "rw_05",
+      "group": "__summary__",
+      "min_group_rows": 100,
+      "n_groups": 1,
+      "prior_strength": 1000.0,
+      "scale": 1.3831717957679819,
+      "time_bucket_size": 100
+    }
+  ]
+}
