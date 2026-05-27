@@ -1,0 +1,3 @@
+fold,train_start,train_end,valid_start,valid_end,engine,feature_set,n_features,train_sample_rows,rows,numerator,denominator,weighted_zero_mean_r2
+rw_01,1539,1658,1659,1678,xgboost,clock,81,444636,740520,955026.5465727707,960511.5364725835,0.005710488309131789
+rw_02,1559,1678,1679,1698,xgboost,clock,81,445576,752136,798545.0197367594,800877.1940120393,0.002912024830669546
