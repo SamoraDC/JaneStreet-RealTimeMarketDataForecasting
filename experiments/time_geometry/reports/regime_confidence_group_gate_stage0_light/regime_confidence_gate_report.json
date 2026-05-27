@@ -1,0 +1,84 @@
+{
+  "anti_leakage_audit": {
+    "direct_clock_simplex_eligible_for_selection": false,
+    "gateway_observability_max_abs_diff": 0.0,
+    "selection_used_to_choose_gate": true,
+    "train_selection_validation_disjoint": true,
+    "validation_used_to_choose_gate": false
+  },
+  "best_validation_strategy": {
+    "folds": 2,
+    "global_r2": 0.004247560433249253,
+    "max_r2": 0.006280607108567593,
+    "mean_r2": 0.004297833272271456,
+    "min_r2": 0.0023150594359753196,
+    "selected_folds": 0,
+    "std_r2": 0.0028040656504085275,
+    "strategy": "group_select_clock_weight_abs_shrink",
+    "validation_rows": 752136
+  },
+  "causality_contract": {
+    "batch_missing_frac": "computed from the current (date_id,time_id) gateway batch only",
+    "gate_fit": "fit on inner OOF predictions from the train window",
+    "gate_policy_family": "pre-specified by command-line candidate names before validation scoring",
+    "group_selection_usage": "selection may activate fitted candidates by pre-specified risk groups; validation targets are not used",
+    "model_training_dates": "strictly before selection and validation",
+    "official_lags_used": false,
+    "selection_usage": "selection chooses among fitted policies; validation targets are not used for selection",
+    "validation_targets_used_for_fitting": false
+  },
+  "clock": "batch_missing",
+  "dataset_date_bounds": {
+    "max_date_id": 1698,
+    "min_date_id": 0
+  },
+  "engines": [
+    "xgboost",
+    "lightgbm"
+  ],
+  "experiment": "regime_confidence_gate_walk_forward",
+  "fold_date_bounds": {
+    "max_date_id": 1698,
+    "min_date_id": 0
+  },
+  "folds": [
+    {
+      "fold": "otf_01",
+      "selection_end": 1678,
+      "selection_start": 1669,
+      "train_end": 1668,
+      "train_start": 1609,
+      "valid_end": 1688,
+      "valid_start": 1679
+    },
+    {
+      "fold": "otf_02",
+      "selection_end": 1688,
+      "selection_start": 1679,
+      "train_end": 1678,
+      "train_start": 1619,
+      "valid_end": 1698,
+      "valid_start": 1689
+    }
+  ],
+  "gate_candidates": [
+    "global_blend",
+    "clock_blend",
+    "clock_weight_blend",
+    "clock_weight_abs_blend",
+    "clock_weight_disagreement_blend",
+    "clock_weight_delta_blend",
+    "clock_weight_shrink",
+    "clock_weight_abs_shrink",
+    "clock_weight_disagreement_shrink"
+  ],
+  "gbdt_seeds": "17",
+  "group_selection_min_delta": 0.0,
+  "group_selection_min_rows": 500,
+  "hypothesis": "Clock simplex is more useful as a causal regime/confidence signal over the active ensemble than as a fixed tail switch.",
+  "max_iter": 20,
+  "selection_window": 10,
+  "train_sample_frac": 0.02,
+  "train_window": 60,
+  "valid_window": 10
+}
