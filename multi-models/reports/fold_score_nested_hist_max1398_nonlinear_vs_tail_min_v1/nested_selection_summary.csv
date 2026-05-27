@@ -1,0 +1,2 @@
+candidate,family,rows,weight_sum,numerator,denominator,mean_fold_r2,min_fold_r2,std_fold_r2,global_r2
+nested_previous_fold_selector,nested_selector,11151360,21105826.5,16172549.701564277,16427583.5,0.015312162776993455,0.012890489078113632,0.0033055066255943044,0.015524730002786091
